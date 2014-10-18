@@ -24,8 +24,5 @@
 #import "TableViewSectionFactoryProtocol.h"
 #import "KHTableViewSectionModel.h"
 
-#import <LBDelegateMatrioska/LBDelegateMatrioska.h>
-#import <AWPagedArray/AWPagedArray.h>
-
 #import "HandleContentLoadingProtocol.h"
 #import "ContentLoadingProtocol.h"
