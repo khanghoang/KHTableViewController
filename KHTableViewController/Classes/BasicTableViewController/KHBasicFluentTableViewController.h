@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KHTableViewController.h"
 
 @interface KHBasicFluentTableViewController : UIViewController
 

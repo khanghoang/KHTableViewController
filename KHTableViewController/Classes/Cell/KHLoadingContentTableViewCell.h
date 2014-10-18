@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KHTableViewController.h"
 
 @interface KHLoadingContentTableViewCell : UITableViewCell
 <

@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Triệu Khang. All rights reserved.
 //
 
+#import "KHTableViewController.h"
 #import <Foundation/Foundation.h>
 
 @interface KHErrorLoadingMoreSectionModel : NSObject

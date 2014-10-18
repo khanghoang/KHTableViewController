@@ -11,17 +11,17 @@
 
 @interface KHBasicFluentTableViewController ()
 <
-    HandleContentLoadingProtocol,
-    DataProviderDelegate
+    KHHandleContentLoadingProtocol,
+    KHDataProviderDelegate
 >
 
-@property (strong, nonatomic) TableController *tableController;
+@property (strong, nonatomic) KHTableController *tableController;
 
 @end
 
 @implementation KHBasicFluentTableViewController
 
-- (id <ContentLoadingProtocol, KHTableViewSectionModel> )getLoadingTotalPageObject {
+- (id <KHContentLoadingProtocol, KHTableViewSectionModel> )getLoadingTotalPageObject {
 	[NSException raise:NSInternalInconsistencyException
 	            format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
 	return nil;
@@ -58,16 +58,16 @@
 
     [self _checkIfSetupTableView];
 
-	BasicTableViewModel *dataSection = [[BasicTableViewModel alloc] init];
-	id <KHTableViewSectionModel, ContentLoadingProtocol> loadingTotalItems = [self getLoadingTotalPageObject];
+	KHBasicTableViewModel *dataSection = [[KHBasicTableViewModel alloc] init];
+	id <KHTableViewSectionModel, KHContentLoadingProtocol> loadingTotalItems = [self getLoadingTotalPageObject];
 	loadingTotalItems.delegate = self;
 	dataSection.sectionModel = loadingTotalItems;
 
 	[loadingTotalItems loadContent];
 
-	self.tableController = [[TableController alloc] init];
+	self.tableController = [[KHTableController alloc] init];
 	self.tableController.model = dataSection;
-	self.tableController.cellFactory = [[WSContentLoadingCellFactory alloc] init];
+	self.tableController.cellFactory = [[KHContentLoadingCellFactory alloc] init];
 
 	self.tableView.dataSource = self.tableController;
 	self.tableView.delegate = self.tableController;
@@ -76,8 +76,8 @@
 }
 
 - (void)didLoadWithResultWithTotalPage:(NSInteger)totalItems error:(NSError *)error operation:(AFHTTPRequestOperation *)operation {
-	BasicTableViewModel *dataSection = [[BasicTableViewModel alloc] init];
-	DataProvider *provider = [[DataProvider alloc] initWithPageSize:10];
+	KHBasicTableViewModel *dataSection = [[KHBasicTableViewModel alloc] init];
+	KHFluentDataProvider *provider = [[KHFluentDataProvider alloc] initWithPageSize:10];
 	provider.automaticPreloadMargin = 2;
 	provider.shouldLoadAutomatically = YES;
 	dataSection.sectionModel = provider;
@@ -92,7 +92,7 @@
 	[self.tableView reloadData];
 }
 
-- (void)dataProvider:(DataProvider *)dataProvider didLoadDataAtIndexes:(NSIndexSet *)indexes {
+- (void)dataProvider:(KHFluentDataProvider *)dataProvider didLoadDataAtIndexes:(NSIndexSet *)indexes {
 	[self.tableView beginUpdates];
 	NSMutableArray *arrReloadRow = [NSMutableArray array];
 	[indexes enumerateIndexesUsingBlock: ^(NSUInteger idx, BOOL *stop) {

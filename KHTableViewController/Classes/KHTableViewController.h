@@ -17,7 +17,7 @@
 #import "KHImageSectionModel.h"
 #import "KHBasicSectionModel.h"
 #import "KHLoadingOperationProtocol.h"
-#import "DataProvider.h"
+#import "KHFluentDataProvider.h"
 
 #import "KHTableViewCellFactoryProtocol.h"
 #import "KHTableViewModel.h"

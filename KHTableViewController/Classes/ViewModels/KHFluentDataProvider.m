@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Alek Åström. All rights reserved.
 //
 
+#import "KHTableViewController.h"
 #import "KHFluentDataProvider.h"
 #import "AWPagedArray.h"
 #import "KHDataLoadingOperation.h"

@@ -9,7 +9,7 @@
 @import Foundation;
 
 @class KHFluentDataProvider;
-@protocol DataProviderDelegate<NSObject>
+@protocol KHDataProviderDelegate<NSObject>
 
 @required
 - (id<KHLoadingOperationProtocol>)loadingOperationForSectionViewModel:(id<KHTableViewSectionModel>)viewModel indexes:(NSIndexSet *)indexes;
@@ -27,7 +27,7 @@ KHTableViewSectionModel
 
 - (instancetype)initWithPageSize:(NSUInteger)pageSize;
 
-@property (nonatomic, weak) id<DataProviderDelegate> delegate;
+@property (nonatomic, weak) id<KHDataProviderDelegate> delegate;
 
 /**
  * The array returned will be a proxy object containing

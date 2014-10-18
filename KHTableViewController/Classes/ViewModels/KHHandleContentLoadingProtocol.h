@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol HandleContentLoadingProtocol <NSObject>
+@protocol KHHandleContentLoadingProtocol <NSObject>
 
 - (void)didLoadWithResultWithTotalPage:(NSInteger)totalItems error:(NSError *)error operation:(AFHTTPRequestOperation *)operation;
 
