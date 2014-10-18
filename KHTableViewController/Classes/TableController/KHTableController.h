@@ -11,7 +11,7 @@
 #import "KHTableViewModel.h"
 #import "KHTableViewCellFactoryProtocol.h"
 
-@interface TableController : NSObject
+@interface KHTableController : NSObject
 <
 UITableViewDataSource,
 UITableViewDelegate

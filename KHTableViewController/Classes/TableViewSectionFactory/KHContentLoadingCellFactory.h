@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WSContentLoadingCellFactory : NSObject
+@interface KHContentLoadingCellFactory : NSObject
 <
     KHTableViewCellFactoryProtocol
 >

@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Triệu Khang. All rights reserved.
 //
 
-#import "BasicTableViewModel.h"
+#import "KHBasicTableViewModel.h"
 
-@interface BasicTableViewModel()
+@interface KHBasicTableViewModel()
 
 @property (strong, nonatomic) id<KHTableViewModel> viewModel;
 
 @end
 
-@implementation BasicTableViewModel
+@implementation KHBasicTableViewModel
 
 - (instancetype)initWithModel:(id<KHTableViewModel>)viewModel {
     self = [super init];

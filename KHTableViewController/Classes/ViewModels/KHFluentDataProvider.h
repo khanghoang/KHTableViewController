@@ -8,19 +8,19 @@
 
 @import Foundation;
 
-@class DataProvider;
+@class KHFluentDataProvider;
 @protocol DataProviderDelegate<NSObject>
 
 @required
 - (id<KHLoadingOperationProtocol>)loadingOperationForSectionViewModel:(id<KHTableViewSectionModel>)viewModel indexes:(NSIndexSet *)indexes;
 
 @optional
-- (void)dataProvider:(DataProvider *)dataProvider willLoadDataAtIndexes:(NSIndexSet *)indexes;
-- (void)dataProvider:(DataProvider *)dataProvider didLoadDataAtIndexes:(NSIndexSet *)indexes;
+- (void)dataProvider:(KHFluentDataProvider *)dataProvider willLoadDataAtIndexes:(NSIndexSet *)indexes;
+- (void)dataProvider:(KHFluentDataProvider *)dataProvider didLoadDataAtIndexes:(NSIndexSet *)indexes;
 
 @end
 
-@interface DataProvider : NSObject
+@interface KHFluentDataProvider : NSObject
 <
 KHTableViewSectionModel
 >

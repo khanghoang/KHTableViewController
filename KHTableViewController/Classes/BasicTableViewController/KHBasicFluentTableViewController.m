@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Triệu Khang. All rights reserved.
 //
 
-#import "BasicFluentTableViewController.h"
-#import "WSContentLoadingCellFactory.h"
+#import "KHBasicFluentTableViewController.h"
+#import "KHContentLoadingCellFactory.h"
 
-@interface BasicFluentTableViewController ()
+@interface KHBasicFluentTableViewController ()
 <
     HandleContentLoadingProtocol,
     DataProviderDelegate
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation BasicFluentTableViewController
+@implementation KHBasicFluentTableViewController
 
 - (id <ContentLoadingProtocol, KHTableViewSectionModel> )getLoadingTotalPageObject {
 	[NSException raise:NSInternalInconsistencyException

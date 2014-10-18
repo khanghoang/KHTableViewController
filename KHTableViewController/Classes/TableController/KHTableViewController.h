@@ -21,11 +21,11 @@
 
 #import "KHTableViewCellFactoryProtocol.h"
 #import "KHTableViewModel.h"
-#import "TableViewSectionFactoryProtocol.h"
+#import "KHTableViewSectionFactoryProtocol.h"
 #import "KHTableViewSectionModel.h"
 
 #import <LBDelegateMatrioska/LBDelegateMatrioska.h>
 #import <AWPagedArray/AWPagedArray.h>
 
-#import "HandleContentLoadingProtocol.h"
-#import "ContentLoadingProtocol.h"
+#import "KHHandleContentLoadingProtocol.h"
+#import "KHContentLoadingProtocol.h"

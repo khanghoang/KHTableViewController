@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Triệu Khang. All rights reserved.
 //
 
-#import "TableController.h"
-#import "BasicTableViewModel.h"
+#import "KHTableController.h"
+#import "KHBasicTableViewModel.h"
 #import "KHBasicSectionModel.h"
 
-@interface TableController()
+@interface KHTableController()
 
 @end
 
-@implementation TableController
+@implementation KHTableController
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     NSUInteger sections = [self.model numberOfSection];

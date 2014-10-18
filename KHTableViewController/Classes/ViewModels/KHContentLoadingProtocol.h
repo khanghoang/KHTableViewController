@@ -1,5 +1,5 @@
 //
-//  ContentLoadingProtocol.h
+//  KHContentLoadingProtocol.h
 //  KHAwesomeImage
 //
 //  Created by Triệu Khang on 10/10/14.
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ContentLoadingProtocol <NSObject>
+@protocol KHContentLoadingProtocol <NSObject>
 
 - (void)loadContent:(void(^)(NSInteger totalItems, NSError *error, AFHTTPRequestOperation *operation))completeBlock;
 - (void)loadContent;
 
-@property (nonatomic, weak) id<HandleContentLoadingProtocol> delegate;
+@property (nonatomic, weak) id<KHHandleContentLoadingProtocol> delegate;
 
 @end

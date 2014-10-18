@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BasicFluentTableViewController : UIViewController
+@interface KHBasicFluentTableViewController : UIViewController
 
 /**
  *  Return loading content object to load total items

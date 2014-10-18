@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Alek Åström. All rights reserved.
 //
 
-#import "DataLoadingOperation.h"
+#import "KHDataLoadingOperation.h"
 
-@interface DataLoadingOperation()
+@interface KHDataLoadingOperation()
 
 @property (nonatomic, readonly) NSIndexSet *indexes;
 @property (nonatomic, readonly) NSArray *dataPage;
@@ -17,7 +17,7 @@
 
 const NSTimeInterval DataLoadingOperationDuration = 0.3;
 
-@implementation DataLoadingOperation
+@implementation KHDataLoadingOperation
 
 - (instancetype)initWithIndexes:(NSIndexSet *)indexes{
 

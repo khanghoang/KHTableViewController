@@ -6,22 +6,22 @@
 //  Copyright (c) 2013 Alek Åström. All rights reserved.
 //
 
-#import "DataProvider.h"
+#import "KHFluentDataProvider.h"
 #import "AWPagedArray.h"
-#import "DataLoadingOperation.h"
+#import "KHDataLoadingOperation.h"
 #import "KHPopularImagesViewModel.h"
 
 const NSUInteger DataProviderDefaultPageSize = 20;
 const NSUInteger DataProviderDataCount = 200;
 
-@interface DataProvider ()
+@interface KHFluentDataProvider ()
 <
 AWPagedArrayDelegate
 >
 
 @end
 
-@implementation DataProvider {
+@implementation KHFluentDataProvider {
     KHPopularImagesViewModel *_pagedArray;
     NSOperationQueue *_operationQueue;
     NSMutableDictionary *_dataLoadingOperations;

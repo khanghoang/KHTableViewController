@@ -1,5 +1,5 @@
 //
-//  TableViewSectionFactoryProtocol.h
+//  KHTableViewSectionFactoryProtocol.h
 //  KHCleanTableViewController
 //
 //  Created by Triệu Khang on 2/10/14.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "KHTableViewModel.h"
 
-@protocol TableViewSectionFactoryProtocol <NSObject>
+@protocol KHTableViewSectionFactoryProtocol <NSObject>
 
 - (UIView *)sectionAtIndex:(NSInteger)sectionIndex model:(id<KHTableViewModel>)model;
 

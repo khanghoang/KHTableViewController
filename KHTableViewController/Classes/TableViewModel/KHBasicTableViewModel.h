@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "KHTableViewModel.h"
 
-@interface BasicTableViewModel : NSObject
+@interface KHBasicTableViewModel : NSObject
 <
 KHTableViewModel
 >

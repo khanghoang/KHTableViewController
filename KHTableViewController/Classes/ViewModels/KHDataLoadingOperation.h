@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DataLoadingOperation : NSBlockOperation
+@interface KHDataLoadingOperation : NSBlockOperation
 <
     KHLoadingOperationProtocol
 >
