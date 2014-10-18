@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "TableController.h"
-#import "BasicTableViewModel.h"
+#import "KHTableController.h"
+#import "KHBasicTableViewModel.h"
 #import "KHCellProtocol.h"
 #import "KHLoadMoreTableViewCell.h"
 #import "KHLoadMoreSection.h"

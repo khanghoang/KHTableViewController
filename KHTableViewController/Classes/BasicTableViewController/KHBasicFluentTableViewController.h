@@ -16,7 +16,7 @@
  *
  *  @return object that conforms ContentLoadingProtocol and KHTableViewSectionModel
  */
-- (id <ContentLoadingProtocol, KHTableViewSectionModel> )getLoadingTotalPageObject;
+- (id <KHContentLoadingProtocol, KHTableViewSectionModel> )getLoadingTotalPageObject;
 
 - (id <KHLoadingOperationProtocol> )loadingOperationForSectionViewModel:(id <KHTableViewSectionModel> )viewModel indexes:(NSIndexSet *)indexes;
 
