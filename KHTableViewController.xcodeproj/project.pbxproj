@@ -38,6 +38,14 @@
 		B4A95E4C19F4BE9F001282DF /* KHLoadingContentErrorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E3619F4BE9F001282DF /* KHLoadingContentErrorViewModel.m */; };
 		B4A95E4D19F4BE9F001282DF /* KHOrderedDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E3919F4BE9F001282DF /* KHOrderedDataProvider.m */; };
 		B4A95E4E19F4BE9F001282DF /* KHPopularImagesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E3B19F4BE9F001282DF /* KHPopularImagesViewModel.m */; };
+		B4A95E5419F4BF02001282DF /* KHLoadingFreshTodayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E5219F4BF02001282DF /* KHLoadingFreshTodayOperation.m */; };
+		B4A95E5719F4BF57001282DF /* KHLoadingPopularOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E5619F4BF57001282DF /* KHLoadingPopularOperation.m */; };
+		B4A95E5A19F4C07E001282DF /* KHContentLoadingFreshTodayViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E5919F4C07E001282DF /* KHContentLoadingFreshTodayViewModel.m */; };
+		B4A95E5D19F4C09C001282DF /* KHFreshTodayCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E5C19F4C09C001282DF /* KHFreshTodayCellFactory.m */; };
+		B4A95E6019F4C0AC001282DF /* CellFactory1.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E5F19F4C0AC001282DF /* CellFactory1.m */; };
+		B4A95E6319F4C151001282DF /* ContentLoadingPopularViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E6219F4C151001282DF /* ContentLoadingPopularViewModel.m */; };
+		B4A95E6819F4C1BA001282DF /* KHImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E6619F4C1BA001282DF /* KHImageTableViewCell.m */; };
+		B4A95E6919F4C1BA001282DF /* KHImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A95E6719F4C1BA001282DF /* KHImageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +124,21 @@
 		B4A95E3919F4BE9F001282DF /* KHOrderedDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHOrderedDataProvider.m; sourceTree = "<group>"; };
 		B4A95E3A19F4BE9F001282DF /* KHPopularImagesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHPopularImagesViewModel.h; sourceTree = "<group>"; };
 		B4A95E3B19F4BE9F001282DF /* KHPopularImagesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPopularImagesViewModel.m; sourceTree = "<group>"; };
+		B4A95E5119F4BF02001282DF /* KHLoadingFreshTodayOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadingFreshTodayOperation.h; sourceTree = "<group>"; };
+		B4A95E5219F4BF02001282DF /* KHLoadingFreshTodayOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadingFreshTodayOperation.m; sourceTree = "<group>"; };
+		B4A95E5519F4BF57001282DF /* KHLoadingPopularOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadingPopularOperation.h; sourceTree = "<group>"; };
+		B4A95E5619F4BF57001282DF /* KHLoadingPopularOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadingPopularOperation.m; sourceTree = "<group>"; };
+		B4A95E5819F4C07E001282DF /* KHContentLoadingFreshTodayViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHContentLoadingFreshTodayViewModel.h; sourceTree = "<group>"; };
+		B4A95E5919F4C07E001282DF /* KHContentLoadingFreshTodayViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHContentLoadingFreshTodayViewModel.m; sourceTree = "<group>"; };
+		B4A95E5B19F4C09C001282DF /* KHFreshTodayCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHFreshTodayCellFactory.h; sourceTree = "<group>"; };
+		B4A95E5C19F4C09C001282DF /* KHFreshTodayCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHFreshTodayCellFactory.m; sourceTree = "<group>"; };
+		B4A95E5E19F4C0AC001282DF /* CellFactory1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFactory1.h; sourceTree = "<group>"; };
+		B4A95E5F19F4C0AC001282DF /* CellFactory1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFactory1.m; sourceTree = "<group>"; };
+		B4A95E6119F4C151001282DF /* ContentLoadingPopularViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentLoadingPopularViewModel.h; sourceTree = "<group>"; };
+		B4A95E6219F4C151001282DF /* ContentLoadingPopularViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentLoadingPopularViewModel.m; sourceTree = "<group>"; };
+		B4A95E6519F4C1BA001282DF /* KHImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHImageTableViewCell.h; sourceTree = "<group>"; };
+		B4A95E6619F4C1BA001282DF /* KHImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHImageTableViewCell.m; sourceTree = "<group>"; };
+		B4A95E6719F4C1BA001282DF /* KHImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHImageTableViewCell.xib; sourceTree = "<group>"; };
 		DB26024678D349BB0C84C24C /* libPods-KHTableViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KHTableViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -179,8 +202,21 @@
 			isa = PBXGroup;
 			children = (
 				B4A95E0719F4BE9F001282DF /* Classes */,
+				B4A95E6419F4C1BA001282DF /* ImageCell */,
+				B4A95E6119F4C151001282DF /* ContentLoadingPopularViewModel.h */,
+				B4A95E6219F4C151001282DF /* ContentLoadingPopularViewModel.m */,
+				B4A95E5E19F4C0AC001282DF /* CellFactory1.h */,
+				B4A95E5F19F4C0AC001282DF /* CellFactory1.m */,
+				B4A95E5819F4C07E001282DF /* KHContentLoadingFreshTodayViewModel.h */,
+				B4A95E5919F4C07E001282DF /* KHContentLoadingFreshTodayViewModel.m */,
+				B4A95E5519F4BF57001282DF /* KHLoadingPopularOperation.h */,
+				B4A95E5619F4BF57001282DF /* KHLoadingPopularOperation.m */,
+				B4A95E5119F4BF02001282DF /* KHLoadingFreshTodayOperation.h */,
+				B4A95E5219F4BF02001282DF /* KHLoadingFreshTodayOperation.m */,
 				B4A95E0119F4BC62001282DF /* KHFreshTodayImagesViewController.h */,
 				B4A95DFE19F4BC62001282DF /* KHFreshTodayImagesViewController.m */,
+				B4A95E5B19F4C09C001282DF /* KHFreshTodayCellFactory.h */,
+				B4A95E5C19F4C09C001282DF /* KHFreshTodayCellFactory.m */,
 				B4A95E0319F4BC62001282DF /* KHMainViewController.h */,
 				B4A95DFF19F4BC62001282DF /* KHMainViewController.m */,
 				B4A95E0219F4BC62001282DF /* ViewController.h */,
@@ -338,6 +374,16 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		B4A95E6419F4C1BA001282DF /* ImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95E6519F4C1BA001282DF /* KHImageTableViewCell.h */,
+				B4A95E6619F4C1BA001282DF /* KHImageTableViewCell.m */,
+				B4A95E6719F4C1BA001282DF /* KHImageTableViewCell.xib */,
+			);
+			path = ImageCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -424,6 +470,7 @@
 				B4A95DF919F4BBFC001282DF /* Main.storyboard in Resources */,
 				B4A95E4019F4BE9F001282DF /* KHLoadingContentTableViewCell.xib in Resources */,
 				B4A95DFC19F4BC0A001282DF /* Popular.storyboard in Resources */,
+				B4A95E6919F4C1BA001282DF /* KHImageTableViewCell.xib in Resources */,
 				B4A95DFD19F4BC0A001282DF /* FreshToday.storyboard in Resources */,
 				B4A95E4219F4BE9F001282DF /* KHLoadMoreTableViewCell.xib in Resources */,
 				B4A95D9A19F4BAFB001282DF /* LaunchScreen.xib in Resources */,
@@ -478,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A95E6819F4C1BA001282DF /* KHImageTableViewCell.m in Sources */,
 				B4A95E0619F4BC62001282DF /* ViewController.m in Sources */,
 				B4A95E4B19F4BE9F001282DF /* KHFluentDataProvider.m in Sources */,
 				B4A95E3F19F4BE9F001282DF /* KHLoadingContentTableViewCell.m in Sources */,
@@ -491,13 +539,19 @@
 				B4A95E3D19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.m in Sources */,
 				B4A95E4919F4BE9F001282DF /* KHLoadMoreSection.m in Sources */,
 				B4A95E4719F4BE9F001282DF /* KHErrorLoadingMoreSectionModel.m in Sources */,
+				B4A95E5419F4BF02001282DF /* KHLoadingFreshTodayOperation.m in Sources */,
 				B4A95D8C19F4BAFB001282DF /* main.m in Sources */,
 				B4A95E4E19F4BE9F001282DF /* KHPopularImagesViewModel.m in Sources */,
 				B4A95E4C19F4BE9F001282DF /* KHLoadingContentErrorViewModel.m in Sources */,
+				B4A95E6019F4C0AC001282DF /* CellFactory1.m in Sources */,
 				B4A95E4619F4BE9F001282DF /* KHBasicSectionModel.m in Sources */,
+				B4A95E5719F4BF57001282DF /* KHLoadingPopularOperation.m in Sources */,
 				B4A95E4A19F4BE9F001282DF /* KHDataLoadingOperation.m in Sources */,
+				B4A95E6319F4C151001282DF /* ContentLoadingPopularViewModel.m in Sources */,
+				B4A95E5A19F4C07E001282DF /* KHContentLoadingFreshTodayViewModel.m in Sources */,
 				B4A95E4319F4BE9F001282DF /* KHTableController.m in Sources */,
 				B4A95E3C19F4BE9F001282DF /* KHBasicFluentTableViewController.m in Sources */,
+				B4A95E5D19F4C09C001282DF /* KHFreshTodayCellFactory.m in Sources */,
 				B4A95E4119F4BE9F001282DF /* KHLoadMoreTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

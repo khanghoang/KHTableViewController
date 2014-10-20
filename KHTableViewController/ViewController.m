@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Triệu Khang. All rights reserved.
 //
 
+#import <LBDelegateMatrioska/LBDelegateMatrioska.h>
 #import "ViewController.h"
 #import "CellFactory1.h"
 #import "ContentLoadingPopularViewModel.h"
@@ -14,13 +15,13 @@
 
 @interface ViewController ()
 <
-    HandleContentLoadingProtocol
+    KHHandleContentLoadingProtocol
 >
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (strong, nonatomic) TableController *tableController;
-@property (strong, nonatomic) BasicTableViewModel *basicModel;
+@property (strong, nonatomic) KHTableController *tableController;
+@property (strong, nonatomic) KHBasicTableViewModel *basicModel;
 @property (strong, nonatomic) LBDelegateMatrioska *chainDelegate;
 @property (strong, nonatomic) CellFactory1 *cellFactory;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
@@ -36,10 +37,10 @@
 	[self.refreshControl addTarget:self action:@selector(onRefresh) forControlEvents:UIControlEventValueChanged];
 	[self.tableView addSubview:self.refreshControl];
 
-	self.tableController = [[TableController alloc] init];
+	self.tableController = [[KHTableController alloc] init];
 
 	self.tableView.dataSource = self.tableController;
-    self.tableController.factory = [[CellFactory1 alloc] init];
+    self.tableController.cellFactory = [[CellFactory1 alloc] init];
 
 	self.chainDelegate = [[LBDelegateMatrioska alloc] initWithDelegates:@[self.tableController, self]];
 	self.tableView.delegate = (id)self.chainDelegate;
@@ -48,7 +49,7 @@
 }
 
 - (void)onRefresh {
-    BasicTableViewModel *loadingContentSection = [[BasicTableViewModel alloc] init];
+    KHBasicTableViewModel *loadingContentSection = [[KHBasicTableViewModel alloc] init];
 	ContentLoadingPopularViewModel *loadingContentViewModel = [[ContentLoadingPopularViewModel alloc] init];
 	loadingContentSection.sectionModel = loadingContentViewModel;
 	loadingContentViewModel.delegate = self;
@@ -63,7 +64,7 @@
 
 #pragma mark - Data controller delegate
 
-- (void)dataProvider:(DataProvider *)dataProvider didLoadDataAtIndexes:(NSIndexSet *)indexes {
+- (void)dataProvider:(KHFluentDataProvider *)dataProvider didLoadDataAtIndexes:(NSIndexSet *)indexes {
 	[self.tableView beginUpdates];
 	[indexes enumerateIndexesUsingBlock: ^(NSUInteger idx, BOOL *stop) {
 	    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:idx inSection:0];
@@ -82,7 +83,7 @@
     [self.refreshControl endRefreshing];
 
 	if (error) {
-		BasicTableViewModel *loadingContentErrorSection = [[BasicTableViewModel alloc] initWithModel:nil];
+		KHBasicTableViewModel *loadingContentErrorSection = [[KHBasicTableViewModel alloc] initWithModel:nil];
 		KHLoadingContentErrorViewModel *loadingContentErrorViewModel = [[KHLoadingContentErrorViewModel alloc] init];
 		loadingContentErrorSection.sectionModel = loadingContentErrorViewModel;
 
@@ -94,12 +95,12 @@
 		return;
 	}
 
-	DataProvider *dataProvider = [[DataProvider alloc] init];
+	KHFluentDataProvider *dataProvider = [[KHFluentDataProvider alloc] init];
 	dataProvider.delegate = (id)self;
 	dataProvider.shouldLoadAutomatically = YES;
 	dataProvider.automaticPreloadMargin = 20;
 
-	BasicTableViewModel *imageSection = [[BasicTableViewModel alloc] init];
+	KHBasicTableViewModel *imageSection = [[KHBasicTableViewModel alloc] init];
 	imageSection.sectionModel = dataProvider;
 
 	self.basicModel = imageSection;

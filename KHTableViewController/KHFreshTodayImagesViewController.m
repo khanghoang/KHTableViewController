@@ -16,12 +16,12 @@
 @interface KHFreshTodayImagesViewController ()
 <
     KHOrderedDataProtocol,
-    HandleContentLoadingProtocol
+    KHHandleContentLoadingProtocol
 >
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) TableController *tableController;
-@property (strong, nonatomic) BasicTableViewModel *basicModel;
+@property (strong, nonatomic) KHTableController *tableController;
+@property (strong, nonatomic) KHBasicTableViewModel *basicModel;
 @property (strong, nonatomic) LBDelegateMatrioska *chainDelegate;
 @property (strong, nonatomic) id <KHTableViewCellFactoryProtocol> cellFactory;
 
@@ -32,15 +32,15 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view.
-	self.tableController = [[TableController alloc] init];
+	self.tableController = [[KHTableController alloc] init];
 
 	self.tableView.dataSource = self.tableController;
-	self.tableController.factory = [[KHFreshTodayCellFactory alloc] init];
+	self.tableController.cellFactory = [[KHFreshTodayCellFactory alloc] init];
 
 	self.chainDelegate = [[LBDelegateMatrioska alloc] initWithDelegates:@[self.tableController, self]];
 	self.tableView.delegate = (id)self.chainDelegate;
 
-	BasicTableViewModel *loadingContentSection = [[BasicTableViewModel alloc] init];
+	KHBasicTableViewModel *loadingContentSection = [[KHBasicTableViewModel alloc] init];
 	KHContentLoadingFreshTodayViewModel *loadingContentViewModel = [[KHContentLoadingFreshTodayViewModel alloc] init];
 	loadingContentSection.sectionModel = loadingContentViewModel;
 	loadingContentViewModel.delegate = (id)self;
@@ -58,17 +58,17 @@
 
 
 	if (error) {
-		BasicTableViewModel *errorLoadingMoreSection = [[BasicTableViewModel alloc] init];
+		KHBasicTableViewModel *errorLoadingMoreSection = [[KHBasicTableViewModel alloc] init];
 		errorLoadingMoreSection.sectionModel = [[KHErrorLoadingMoreSectionModel alloc] init];
         tableViewModel = errorLoadingMoreSection;
 	}
 	else {
-		BasicTableViewModel *loadingMoreSection = [[BasicTableViewModel alloc] init];
+		KHBasicTableViewModel *loadingMoreSection = [[KHBasicTableViewModel alloc] init];
 		loadingMoreSection.sectionModel = [[KHLoadMoreSection alloc] init];
         tableViewModel = loadingMoreSection;
 	}
 
-	BasicTableViewModel *imageSection = self.basicModel;
+	KHBasicTableViewModel *imageSection = self.basicModel;
 	[imageSection setViewModel:tableViewModel];
 
 	if (error) {
@@ -86,10 +86,10 @@
 	KHOrderedDataProvider *dataProvider = [[KHOrderedDataProvider alloc] init];
 	dataProvider.delegate = (id)self;
 
-	BasicTableViewModel *loadingMoreSection = [[BasicTableViewModel alloc] init];
+	KHBasicTableViewModel *loadingMoreSection = [[KHBasicTableViewModel alloc] init];
 	loadingMoreSection.sectionModel = [[KHLoadMoreSection alloc] init];
 
-	BasicTableViewModel *imageSection = [[BasicTableViewModel alloc] initWithModel:loadingMoreSection];
+	KHBasicTableViewModel *imageSection = [[KHBasicTableViewModel alloc] initWithModel:loadingMoreSection];
 	imageSection.sectionModel = dataProvider;
 
 	self.basicModel = imageSection;

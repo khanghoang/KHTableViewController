@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFNetworking.h>
+#import "KHHandleContentLoadingProtocol.h"
 
 @protocol KHContentLoadingProtocol <NSObject>
 
