@@ -1,0 +1,39 @@
+PODS:
+  - 500px-iOS-api (1.0.5)
+  - AFNetworking (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AWPagedArray (0.2.0)
+  - LBDelegateMatrioska (0.0.2)
+
+DEPENDENCIES:
+  - 500px-iOS-api
+  - AFNetworking
+  - AWPagedArray
+  - LBDelegateMatrioska
+
+SPEC CHECKSUMS:
+  500px-iOS-api: f3d2933143178565d499977fb18f1730d6a33376
+  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
+  AWPagedArray: 2c02ef1c4be38174c40b8160492e4283352dc5b0
+  LBDelegateMatrioska: 38a2f329b8420dc69164bdbba90d877dd03052a0
+
+COCOAPODS: 0.34.1
