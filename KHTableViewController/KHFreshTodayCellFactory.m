@@ -15,7 +15,7 @@
 #import "KHErrorLoadingMoreSectionModel.h"
 
 @implementation KHFreshTodayCellFactory
-- (CGFloat)heightForItemAtIndexpath:(NSIndexPath *)indexpaht model:(id <KHTableViewModel> )model {
+- (CGFloat)tableView:(UITableView *)tableView heightForItemAtIndexpath:(NSIndexPath *)indexpaht model:(id <KHTableViewModel> )model {
 	if ([[model sectionAtIndex:indexpaht.section] isKindOfClass:[KHLoadMoreSection class]]) {
 		return 40;
 	}

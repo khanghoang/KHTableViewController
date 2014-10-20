@@ -11,7 +11,7 @@
 
 @implementation KHContentLoadingCellFactory
 
-- (CGFloat)tableView:(UITableView *)tableView heightForItemAtIndexpath:(NSIndexPath *)indexpaht model:(id<KHTableViewModel>)model {
+- (CGFloat)tableView:(UITableView*)tableView heightForItemAtIndexpath:(NSIndexPath *)indexpaht model:(id<KHTableViewModel>)model {
     return tableView.frame.size.height;
 }
 

@@ -17,7 +17,7 @@
 
 @implementation CellFactory1
 
-- (CGFloat)heightForItemAtIndexpath:(NSIndexPath *)indexpaht model:(id <KHTableViewModel> )model {
+- (CGFloat)tableView:(UITableView*)tableView heightForItemAtIndexpath:(NSIndexPath *)indexpaht model:(id<KHTableViewModel>)model {
 	if ([[model sectionAtIndex:indexpaht.section] isKindOfClass:[KHLoadMoreSection class]]) {
 		return 40;
 	}
@@ -33,7 +33,7 @@
 	return 320;
 }
 
-- (UITableViewCell <KHCellProtocol> *)cellAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView model:(id <KHTableViewModel> )model {
+- (UITableViewCell<KHCellProtocol> *)cellAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView model:(id<KHTableViewModel>)model {
 
 	if ([[model sectionAtIndex:indexPath.section] isKindOfClass:[ContentLoadingPopularViewModel class]]) {
 		return [self _getReusableCellWithClass:[KHLoadingContentTableViewCell class] tableView:tableView];
