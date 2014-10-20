@@ -8,6 +8,8 @@
 
 #import "KHBasicFluentTableViewController.h"
 #import "KHContentLoadingCellFactory.h"
+#import "KHLoadingContentErrorViewModel.h"
+#import "KHContentLoadingErrorCellFactory.h"
 
 @interface KHBasicFluentTableViewController ()
 <
@@ -76,6 +78,20 @@
 }
 
 - (void)didLoadWithResultWithTotalPage:(NSInteger)totalItems error:(NSError *)error operation:(AFHTTPRequestOperation *)operation {
+
+	if (error) {
+		KHBasicTableViewModel *loadingContentErrorSection = [[KHBasicTableViewModel alloc] initWithModel:nil];
+		KHLoadingContentErrorViewModel *loadingContentErrorViewModel = [[KHLoadingContentErrorViewModel alloc] init];
+		loadingContentErrorSection.sectionModel = loadingContentErrorViewModel;
+
+		[self.tableController setModel:loadingContentErrorSection];
+        self.tableController.cellFactory = [[KHContentLoadingErrorCellFactory alloc] init];
+
+		[self.tableView reloadData];
+
+		return;
+	}
+
 	KHBasicTableViewModel *dataSection = [[KHBasicTableViewModel alloc] init];
 	KHFluentDataProvider *provider = [[KHFluentDataProvider alloc] initWithPageSize:10];
 	provider.automaticPreloadMargin = 2;

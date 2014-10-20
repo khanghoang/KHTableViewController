@@ -56,7 +56,6 @@
 - (void)dataProvider:(KHOrderedDataProvider *)dataProvider didLoadDataAtPage:(NSUInteger)page withItems:(NSArray *)items error:(NSError *)error {
 	id <KHTableViewModel> tableViewModel;
 
-
 	if (error) {
 		KHBasicTableViewModel *errorLoadingMoreSection = [[KHBasicTableViewModel alloc] init];
 		errorLoadingMoreSection.sectionModel = [[KHErrorLoadingMoreSectionModel alloc] init];
