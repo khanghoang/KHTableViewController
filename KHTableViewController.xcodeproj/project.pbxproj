@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		B4A95D8C19F4BAFB001282DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95D8B19F4BAFB001282DF /* main.m */; };
 		B4A95D8F19F4BAFB001282DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95D8E19F4BAFB001282DF /* AppDelegate.m */; };
-		B4A95D9219F4BAFB001282DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95D9119F4BAFB001282DF /* ViewController.m */; };
-		B4A95D9519F4BAFB001282DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A95D9319F4BAFB001282DF /* Main.storyboard */; };
 		B4A95D9719F4BAFB001282DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A95D9619F4BAFB001282DF /* Images.xcassets */; };
 		B4A95D9A19F4BAFB001282DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A95D9819F4BAFB001282DF /* LaunchScreen.xib */; };
 		B4A95DA619F4BAFB001282DF /* KHTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DA519F4BAFB001282DF /* KHTableViewControllerTests.m */; };
@@ -33,6 +31,12 @@
 		B4A95DF519F4BB1A001282DF /* KHLoadingContentErrorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DDF19F4BB1A001282DF /* KHLoadingContentErrorViewModel.m */; };
 		B4A95DF619F4BB1A001282DF /* KHOrderedDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DE219F4BB1A001282DF /* KHOrderedDataProvider.m */; };
 		B4A95DF719F4BB1A001282DF /* KHPopularImagesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DE419F4BB1A001282DF /* KHPopularImagesViewModel.m */; };
+		B4A95DF919F4BBFC001282DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A95DF819F4BBFC001282DF /* Main.storyboard */; };
+		B4A95DFC19F4BC0A001282DF /* Popular.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A95DFA19F4BC0A001282DF /* Popular.storyboard */; };
+		B4A95DFD19F4BC0A001282DF /* FreshToday.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A95DFB19F4BC0A001282DF /* FreshToday.storyboard */; };
+		B4A95E0419F4BC62001282DF /* KHFreshTodayImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DFE19F4BC62001282DF /* KHFreshTodayImagesViewController.m */; };
+		B4A95E0519F4BC62001282DF /* KHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DFF19F4BC62001282DF /* KHMainViewController.m */; };
+		B4A95E0619F4BC62001282DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E0019F4BC62001282DF /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +55,6 @@
 		B4A95D8B19F4BAFB001282DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4A95D8D19F4BAFB001282DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4A95D8E19F4BAFB001282DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B4A95D9019F4BAFB001282DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B4A95D9119F4BAFB001282DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B4A95D9419F4BAFB001282DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4A95D9619F4BAFB001282DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B4A95D9919F4BAFB001282DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B4A95D9F19F4BAFB001282DF /* KHTableViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KHTableViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +104,15 @@
 		B4A95DE219F4BB1A001282DF /* KHOrderedDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHOrderedDataProvider.m; sourceTree = "<group>"; };
 		B4A95DE319F4BB1A001282DF /* KHPopularImagesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHPopularImagesViewModel.h; sourceTree = "<group>"; };
 		B4A95DE419F4BB1A001282DF /* KHPopularImagesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPopularImagesViewModel.m; sourceTree = "<group>"; };
+		B4A95DF819F4BBFC001282DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B4A95DFA19F4BC0A001282DF /* Popular.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popular.storyboard; sourceTree = "<group>"; };
+		B4A95DFB19F4BC0A001282DF /* FreshToday.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FreshToday.storyboard; sourceTree = "<group>"; };
+		B4A95DFE19F4BC62001282DF /* KHFreshTodayImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHFreshTodayImagesViewController.m; sourceTree = "<group>"; };
+		B4A95DFF19F4BC62001282DF /* KHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHMainViewController.m; sourceTree = "<group>"; };
+		B4A95E0019F4BC62001282DF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4A95E0119F4BC62001282DF /* KHFreshTodayImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHFreshTodayImagesViewController.h; sourceTree = "<group>"; };
+		B4A95E0219F4BC62001282DF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B4A95E0319F4BC62001282DF /* KHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHMainViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,12 +154,18 @@
 		B4A95D8819F4BAFB001282DF /* KHTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B4A95E0119F4BC62001282DF /* KHFreshTodayImagesViewController.h */,
+				B4A95DFE19F4BC62001282DF /* KHFreshTodayImagesViewController.m */,
+				B4A95E0319F4BC62001282DF /* KHMainViewController.h */,
+				B4A95DFF19F4BC62001282DF /* KHMainViewController.m */,
+				B4A95E0219F4BC62001282DF /* ViewController.h */,
+				B4A95E0019F4BC62001282DF /* ViewController.m */,
 				B4A95DAF19F4BB1A001282DF /* KHTableViewController */,
 				B4A95D8D19F4BAFB001282DF /* AppDelegate.h */,
 				B4A95D8E19F4BAFB001282DF /* AppDelegate.m */,
-				B4A95D9019F4BAFB001282DF /* ViewController.h */,
-				B4A95D9119F4BAFB001282DF /* ViewController.m */,
-				B4A95D9319F4BAFB001282DF /* Main.storyboard */,
+				B4A95DF819F4BBFC001282DF /* Main.storyboard */,
+				B4A95DFA19F4BC0A001282DF /* Popular.storyboard */,
+				B4A95DFB19F4BC0A001282DF /* FreshToday.storyboard */,
 				B4A95D9619F4BAFB001282DF /* Images.xcassets */,
 				B4A95D9819F4BAFB001282DF /* LaunchScreen.xib */,
 				B4A95D8919F4BAFB001282DF /* Supporting Files */,
@@ -386,10 +402,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A95DF919F4BBFC001282DF /* Main.storyboard in Resources */,
 				B4A95DE719F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.xib in Resources */,
 				B4A95DE919F4BB1A001282DF /* KHLoadingContentTableViewCell.xib in Resources */,
-				B4A95D9519F4BAFB001282DF /* Main.storyboard in Resources */,
+				B4A95DFC19F4BC0A001282DF /* Popular.storyboard in Resources */,
 				B4A95DEB19F4BB1A001282DF /* KHLoadMoreTableViewCell.xib in Resources */,
+				B4A95DFD19F4BC0A001282DF /* FreshToday.storyboard in Resources */,
 				B4A95D9A19F4BAFB001282DF /* LaunchScreen.xib in Resources */,
 				B4A95D9719F4BAFB001282DF /* Images.xcassets in Resources */,
 			);
@@ -409,9 +427,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A95E0619F4BC62001282DF /* ViewController.m in Sources */,
+				B4A95E0519F4BC62001282DF /* KHMainViewController.m in Sources */,
+				B4A95E0419F4BC62001282DF /* KHFreshTodayImagesViewController.m in Sources */,
 				B4A95DE619F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.m in Sources */,
 				B4A95DF219F4BB1A001282DF /* KHLoadMoreSection.m in Sources */,
-				B4A95D9219F4BAFB001282DF /* ViewController.m in Sources */,
 				B4A95DF619F4BB1A001282DF /* KHOrderedDataProvider.m in Sources */,
 				B4A95DF719F4BB1A001282DF /* KHPopularImagesViewModel.m in Sources */,
 				B4A95DF019F4BB1A001282DF /* KHErrorLoadingMoreSectionModel.m in Sources */,
@@ -450,14 +470,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B4A95D9319F4BAFB001282DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4A95D9419F4BAFB001282DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B4A95D9819F4BAFB001282DF /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -618,6 +630,7 @@
 				B4A95DAB19F4BAFB001282DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4A95DAC19F4BAFB001282DF /* Build configuration list for PBXNativeTarget "KHTableViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -626,6 +639,7 @@
 				B4A95DAE19F4BAFB001282DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
