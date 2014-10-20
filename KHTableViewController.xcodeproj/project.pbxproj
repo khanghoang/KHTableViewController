@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4A95D8C19F4BAFB001282DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95D8B19F4BAFB001282DF /* main.m */; };
+		B4A95D8F19F4BAFB001282DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95D8E19F4BAFB001282DF /* AppDelegate.m */; };
+		B4A95D9219F4BAFB001282DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95D9119F4BAFB001282DF /* ViewController.m */; };
+		B4A95D9519F4BAFB001282DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A95D9319F4BAFB001282DF /* Main.storyboard */; };
+		B4A95D9719F4BAFB001282DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A95D9619F4BAFB001282DF /* Images.xcassets */; };
+		B4A95D9A19F4BAFB001282DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A95D9819F4BAFB001282DF /* LaunchScreen.xib */; };
+		B4A95DA619F4BAFB001282DF /* KHTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DA519F4BAFB001282DF /* KHTableViewControllerTests.m */; };
+		B4A95DE519F4BB1A001282DF /* KHBasicFluentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DB319F4BB1A001282DF /* KHBasicFluentTableViewController.m */; };
+		B4A95DE619F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DB619F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.m */; };
+		B4A95DE719F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A95DB719F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.xib */; };
+		B4A95DE819F4BB1A001282DF /* KHLoadingContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DB919F4BB1A001282DF /* KHLoadingContentTableViewCell.m */; };
+		B4A95DE919F4BB1A001282DF /* KHLoadingContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A95DBA19F4BB1A001282DF /* KHLoadingContentTableViewCell.xib */; };
+		B4A95DEA19F4BB1A001282DF /* KHLoadMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DBC19F4BB1A001282DF /* KHLoadMoreTableViewCell.m */; };
+		B4A95DEB19F4BB1A001282DF /* KHLoadMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A95DBD19F4BB1A001282DF /* KHLoadMoreTableViewCell.xib */; };
+		B4A95DEC19F4BB1A001282DF /* KHTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DC119F4BB1A001282DF /* KHTableController.m */; };
+		B4A95DED19F4BB1A001282DF /* KHBasicTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DC719F4BB1A001282DF /* KHBasicTableViewModel.m */; };
+		B4A95DEE19F4BB1A001282DF /* KHContentLoadingCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DCB19F4BB1A001282DF /* KHContentLoadingCellFactory.m */; };
+		B4A95DEF19F4BB1A001282DF /* KHBasicSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DCF19F4BB1A001282DF /* KHBasicSectionModel.m */; };
+		B4A95DF019F4BB1A001282DF /* KHErrorLoadingMoreSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DD119F4BB1A001282DF /* KHErrorLoadingMoreSectionModel.m */; };
+		B4A95DF119F4BB1A001282DF /* KHImageSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DD319F4BB1A001282DF /* KHImageSectionModel.m */; };
+		B4A95DF219F4BB1A001282DF /* KHLoadMoreSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DD519F4BB1A001282DF /* KHLoadMoreSection.m */; };
+		B4A95DF319F4BB1A001282DF /* KHDataLoadingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DDA19F4BB1A001282DF /* KHDataLoadingOperation.m */; };
+		B4A95DF419F4BB1A001282DF /* KHFluentDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DDC19F4BB1A001282DF /* KHFluentDataProvider.m */; };
+		B4A95DF519F4BB1A001282DF /* KHLoadingContentErrorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DDF19F4BB1A001282DF /* KHLoadingContentErrorViewModel.m */; };
+		B4A95DF619F4BB1A001282DF /* KHOrderedDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DE219F4BB1A001282DF /* KHOrderedDataProvider.m */; };
+		B4A95DF719F4BB1A001282DF /* KHPopularImagesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95DE419F4BB1A001282DF /* KHPopularImagesViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4A95DA019F4BAFB001282DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4A95D7E19F4BAFB001282DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4A95D8519F4BAFB001282DF;
+			remoteInfo = KHTableViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4A95D8619F4BAFB001282DF /* KHTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A95D8A19F4BAFB001282DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A95D8B19F4BAFB001282DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4A95D8D19F4BAFB001282DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B4A95D8E19F4BAFB001282DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B4A95D9019F4BAFB001282DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B4A95D9119F4BAFB001282DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4A95D9419F4BAFB001282DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4A95D9619F4BAFB001282DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B4A95D9919F4BAFB001282DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B4A95D9F19F4BAFB001282DF /* KHTableViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KHTableViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A95DA419F4BAFB001282DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A95DA519F4BAFB001282DF /* KHTableViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KHTableViewControllerTests.m; sourceTree = "<group>"; };
+		B4A95DB219F4BB1A001282DF /* KHBasicFluentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBasicFluentTableViewController.h; sourceTree = "<group>"; };
+		B4A95DB319F4BB1A001282DF /* KHBasicFluentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicFluentTableViewController.m; sourceTree = "<group>"; };
+		B4A95DB519F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadingContentErrorTableViewCell.h; sourceTree = "<group>"; };
+		B4A95DB619F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadingContentErrorTableViewCell.m; sourceTree = "<group>"; };
+		B4A95DB719F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHLoadingContentErrorTableViewCell.xib; sourceTree = "<group>"; };
+		B4A95DB819F4BB1A001282DF /* KHLoadingContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadingContentTableViewCell.h; sourceTree = "<group>"; };
+		B4A95DB919F4BB1A001282DF /* KHLoadingContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadingContentTableViewCell.m; sourceTree = "<group>"; };
+		B4A95DBA19F4BB1A001282DF /* KHLoadingContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHLoadingContentTableViewCell.xib; sourceTree = "<group>"; };
+		B4A95DBB19F4BB1A001282DF /* KHLoadMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadMoreTableViewCell.h; sourceTree = "<group>"; };
+		B4A95DBC19F4BB1A001282DF /* KHLoadMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadMoreTableViewCell.m; sourceTree = "<group>"; };
+		B4A95DBD19F4BB1A001282DF /* KHLoadMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHLoadMoreTableViewCell.xib; sourceTree = "<group>"; };
+		B4A95DBE19F4BB1A001282DF /* KHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableViewController.h; sourceTree = "<group>"; };
+		B4A95DC019F4BB1A001282DF /* KHTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableController.h; sourceTree = "<group>"; };
+		B4A95DC119F4BB1A001282DF /* KHTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHTableController.m; sourceTree = "<group>"; };
+		B4A95DC319F4BB1A001282DF /* KHCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCellProtocol.h; sourceTree = "<group>"; };
+		B4A95DC419F4BB1A001282DF /* KHTableViewCellFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableViewCellFactoryProtocol.h; sourceTree = "<group>"; };
+		B4A95DC619F4BB1A001282DF /* KHBasicTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBasicTableViewModel.h; sourceTree = "<group>"; };
+		B4A95DC719F4BB1A001282DF /* KHBasicTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicTableViewModel.m; sourceTree = "<group>"; };
+		B4A95DC819F4BB1A001282DF /* KHTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableViewModel.h; sourceTree = "<group>"; };
+		B4A95DCA19F4BB1A001282DF /* KHContentLoadingCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHContentLoadingCellFactory.h; sourceTree = "<group>"; };
+		B4A95DCB19F4BB1A001282DF /* KHContentLoadingCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHContentLoadingCellFactory.m; sourceTree = "<group>"; };
+		B4A95DCC19F4BB1A001282DF /* KHTableViewSectionFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableViewSectionFactoryProtocol.h; sourceTree = "<group>"; };
+		B4A95DCE19F4BB1A001282DF /* KHBasicSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBasicSectionModel.h; sourceTree = "<group>"; };
+		B4A95DCF19F4BB1A001282DF /* KHBasicSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicSectionModel.m; sourceTree = "<group>"; };
+		B4A95DD019F4BB1A001282DF /* KHErrorLoadingMoreSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHErrorLoadingMoreSectionModel.h; sourceTree = "<group>"; };
+		B4A95DD119F4BB1A001282DF /* KHErrorLoadingMoreSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHErrorLoadingMoreSectionModel.m; sourceTree = "<group>"; };
+		B4A95DD219F4BB1A001282DF /* KHImageSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHImageSectionModel.h; sourceTree = "<group>"; };
+		B4A95DD319F4BB1A001282DF /* KHImageSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHImageSectionModel.m; sourceTree = "<group>"; };
+		B4A95DD419F4BB1A001282DF /* KHLoadMoreSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadMoreSection.h; sourceTree = "<group>"; };
+		B4A95DD519F4BB1A001282DF /* KHLoadMoreSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadMoreSection.m; sourceTree = "<group>"; };
+		B4A95DD619F4BB1A001282DF /* KHTableViewSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableViewSectionModel.h; sourceTree = "<group>"; };
+		B4A95DD819F4BB1A001282DF /* KHContentLoadingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHContentLoadingProtocol.h; sourceTree = "<group>"; };
+		B4A95DD919F4BB1A001282DF /* KHDataLoadingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHDataLoadingOperation.h; sourceTree = "<group>"; };
+		B4A95DDA19F4BB1A001282DF /* KHDataLoadingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHDataLoadingOperation.m; sourceTree = "<group>"; };
+		B4A95DDB19F4BB1A001282DF /* KHFluentDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHFluentDataProvider.h; sourceTree = "<group>"; };
+		B4A95DDC19F4BB1A001282DF /* KHFluentDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHFluentDataProvider.m; sourceTree = "<group>"; };
+		B4A95DDD19F4BB1A001282DF /* KHHandleContentLoadingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHHandleContentLoadingProtocol.h; sourceTree = "<group>"; };
+		B4A95DDE19F4BB1A001282DF /* KHLoadingContentErrorViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadingContentErrorViewModel.h; sourceTree = "<group>"; };
+		B4A95DDF19F4BB1A001282DF /* KHLoadingContentErrorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadingContentErrorViewModel.m; sourceTree = "<group>"; };
+		B4A95DE019F4BB1A001282DF /* KHLoadingOperationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadingOperationProtocol.h; sourceTree = "<group>"; };
+		B4A95DE119F4BB1A001282DF /* KHOrderedDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHOrderedDataProvider.h; sourceTree = "<group>"; };
+		B4A95DE219F4BB1A001282DF /* KHOrderedDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHOrderedDataProvider.m; sourceTree = "<group>"; };
+		B4A95DE319F4BB1A001282DF /* KHPopularImagesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHPopularImagesViewModel.h; sourceTree = "<group>"; };
+		B4A95DE419F4BB1A001282DF /* KHPopularImagesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPopularImagesViewModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4A95D8319F4BAFB001282DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A95D9C19F4BAFB001282DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4A95D7D19F4BAFB001282DF = {
+			isa = PBXGroup;
+			children = (
+				B4A95D8819F4BAFB001282DF /* KHTableViewController */,
+				B4A95DA219F4BAFB001282DF /* KHTableViewControllerTests */,
+				B4A95D8719F4BAFB001282DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4A95D8719F4BAFB001282DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95D8619F4BAFB001282DF /* KHTableViewController.app */,
+				B4A95D9F19F4BAFB001282DF /* KHTableViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4A95D8819F4BAFB001282DF /* KHTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DAF19F4BB1A001282DF /* KHTableViewController */,
+				B4A95D8D19F4BAFB001282DF /* AppDelegate.h */,
+				B4A95D8E19F4BAFB001282DF /* AppDelegate.m */,
+				B4A95D9019F4BAFB001282DF /* ViewController.h */,
+				B4A95D9119F4BAFB001282DF /* ViewController.m */,
+				B4A95D9319F4BAFB001282DF /* Main.storyboard */,
+				B4A95D9619F4BAFB001282DF /* Images.xcassets */,
+				B4A95D9819F4BAFB001282DF /* LaunchScreen.xib */,
+				B4A95D8919F4BAFB001282DF /* Supporting Files */,
+			);
+			path = KHTableViewController;
+			sourceTree = "<group>";
+		};
+		B4A95D8919F4BAFB001282DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95D8A19F4BAFB001282DF /* Info.plist */,
+				B4A95D8B19F4BAFB001282DF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4A95DA219F4BAFB001282DF /* KHTableViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DA519F4BAFB001282DF /* KHTableViewControllerTests.m */,
+				B4A95DA319F4BAFB001282DF /* Supporting Files */,
+			);
+			path = KHTableViewControllerTests;
+			sourceTree = "<group>";
+		};
+		B4A95DA319F4BAFB001282DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DA419F4BAFB001282DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4A95DAF19F4BB1A001282DF /* KHTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DB019F4BB1A001282DF /* Classes */,
+			);
+			path = KHTableViewController;
+			sourceTree = "<group>";
+		};
+		B4A95DB019F4BB1A001282DF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DB119F4BB1A001282DF /* BasicTableViewController */,
+				B4A95DB419F4BB1A001282DF /* Cell */,
+				B4A95DBE19F4BB1A001282DF /* KHTableViewController.h */,
+				B4A95DBF19F4BB1A001282DF /* TableController */,
+				B4A95DC219F4BB1A001282DF /* TableViewCellFactory */,
+				B4A95DC519F4BB1A001282DF /* TableViewModel */,
+				B4A95DC919F4BB1A001282DF /* TableViewSectionFactory */,
+				B4A95DCD19F4BB1A001282DF /* TableViewSectionModel */,
+				B4A95DD719F4BB1A001282DF /* ViewModels */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B4A95DB119F4BB1A001282DF /* BasicTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DB219F4BB1A001282DF /* KHBasicFluentTableViewController.h */,
+				B4A95DB319F4BB1A001282DF /* KHBasicFluentTableViewController.m */,
+			);
+			path = BasicTableViewController;
+			sourceTree = "<group>";
+		};
+		B4A95DB419F4BB1A001282DF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DB519F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.h */,
+				B4A95DB619F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.m */,
+				B4A95DB719F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.xib */,
+				B4A95DB819F4BB1A001282DF /* KHLoadingContentTableViewCell.h */,
+				B4A95DB919F4BB1A001282DF /* KHLoadingContentTableViewCell.m */,
+				B4A95DBA19F4BB1A001282DF /* KHLoadingContentTableViewCell.xib */,
+				B4A95DBB19F4BB1A001282DF /* KHLoadMoreTableViewCell.h */,
+				B4A95DBC19F4BB1A001282DF /* KHLoadMoreTableViewCell.m */,
+				B4A95DBD19F4BB1A001282DF /* KHLoadMoreTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B4A95DBF19F4BB1A001282DF /* TableController */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DC019F4BB1A001282DF /* KHTableController.h */,
+				B4A95DC119F4BB1A001282DF /* KHTableController.m */,
+			);
+			path = TableController;
+			sourceTree = "<group>";
+		};
+		B4A95DC219F4BB1A001282DF /* TableViewCellFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DC319F4BB1A001282DF /* KHCellProtocol.h */,
+				B4A95DC419F4BB1A001282DF /* KHTableViewCellFactoryProtocol.h */,
+			);
+			path = TableViewCellFactory;
+			sourceTree = "<group>";
+		};
+		B4A95DC519F4BB1A001282DF /* TableViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DC619F4BB1A001282DF /* KHBasicTableViewModel.h */,
+				B4A95DC719F4BB1A001282DF /* KHBasicTableViewModel.m */,
+				B4A95DC819F4BB1A001282DF /* KHTableViewModel.h */,
+			);
+			path = TableViewModel;
+			sourceTree = "<group>";
+		};
+		B4A95DC919F4BB1A001282DF /* TableViewSectionFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DCA19F4BB1A001282DF /* KHContentLoadingCellFactory.h */,
+				B4A95DCB19F4BB1A001282DF /* KHContentLoadingCellFactory.m */,
+				B4A95DCC19F4BB1A001282DF /* KHTableViewSectionFactoryProtocol.h */,
+			);
+			path = TableViewSectionFactory;
+			sourceTree = "<group>";
+		};
+		B4A95DCD19F4BB1A001282DF /* TableViewSectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DCE19F4BB1A001282DF /* KHBasicSectionModel.h */,
+				B4A95DCF19F4BB1A001282DF /* KHBasicSectionModel.m */,
+				B4A95DD019F4BB1A001282DF /* KHErrorLoadingMoreSectionModel.h */,
+				B4A95DD119F4BB1A001282DF /* KHErrorLoadingMoreSectionModel.m */,
+				B4A95DD219F4BB1A001282DF /* KHImageSectionModel.h */,
+				B4A95DD319F4BB1A001282DF /* KHImageSectionModel.m */,
+				B4A95DD419F4BB1A001282DF /* KHLoadMoreSection.h */,
+				B4A95DD519F4BB1A001282DF /* KHLoadMoreSection.m */,
+				B4A95DD619F4BB1A001282DF /* KHTableViewSectionModel.h */,
+			);
+			path = TableViewSectionModel;
+			sourceTree = "<group>";
+		};
+		B4A95DD719F4BB1A001282DF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B4A95DD819F4BB1A001282DF /* KHContentLoadingProtocol.h */,
+				B4A95DD919F4BB1A001282DF /* KHDataLoadingOperation.h */,
+				B4A95DDA19F4BB1A001282DF /* KHDataLoadingOperation.m */,
+				B4A95DDB19F4BB1A001282DF /* KHFluentDataProvider.h */,
+				B4A95DDC19F4BB1A001282DF /* KHFluentDataProvider.m */,
+				B4A95DDD19F4BB1A001282DF /* KHHandleContentLoadingProtocol.h */,
+				B4A95DDE19F4BB1A001282DF /* KHLoadingContentErrorViewModel.h */,
+				B4A95DDF19F4BB1A001282DF /* KHLoadingContentErrorViewModel.m */,
+				B4A95DE019F4BB1A001282DF /* KHLoadingOperationProtocol.h */,
+				B4A95DE119F4BB1A001282DF /* KHOrderedDataProvider.h */,
+				B4A95DE219F4BB1A001282DF /* KHOrderedDataProvider.m */,
+				B4A95DE319F4BB1A001282DF /* KHPopularImagesViewModel.h */,
+				B4A95DE419F4BB1A001282DF /* KHPopularImagesViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4A95D8519F4BAFB001282DF /* KHTableViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4A95DA919F4BAFB001282DF /* Build configuration list for PBXNativeTarget "KHTableViewController" */;
+			buildPhases = (
+				B4A95D8219F4BAFB001282DF /* Sources */,
+				B4A95D8319F4BAFB001282DF /* Frameworks */,
+				B4A95D8419F4BAFB001282DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KHTableViewController;
+			productName = KHTableViewController;
+			productReference = B4A95D8619F4BAFB001282DF /* KHTableViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4A95D9E19F4BAFB001282DF /* KHTableViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4A95DAC19F4BAFB001282DF /* Build configuration list for PBXNativeTarget "KHTableViewControllerTests" */;
+			buildPhases = (
+				B4A95D9B19F4BAFB001282DF /* Sources */,
+				B4A95D9C19F4BAFB001282DF /* Frameworks */,
+				B4A95D9D19F4BAFB001282DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4A95DA119F4BAFB001282DF /* PBXTargetDependency */,
+			);
+			name = KHTableViewControllerTests;
+			productName = KHTableViewControllerTests;
+			productReference = B4A95D9F19F4BAFB001282DF /* KHTableViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4A95D7E19F4BAFB001282DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Triệu Khang";
+				TargetAttributes = {
+					B4A95D8519F4BAFB001282DF = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B4A95D9E19F4BAFB001282DF = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B4A95D8519F4BAFB001282DF;
+					};
+				};
+			};
+			buildConfigurationList = B4A95D8119F4BAFB001282DF /* Build configuration list for PBXProject "KHTableViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4A95D7D19F4BAFB001282DF;
+			productRefGroup = B4A95D8719F4BAFB001282DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4A95D8519F4BAFB001282DF /* KHTableViewController */,
+				B4A95D9E19F4BAFB001282DF /* KHTableViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4A95D8419F4BAFB001282DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A95DE719F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.xib in Resources */,
+				B4A95DE919F4BB1A001282DF /* KHLoadingContentTableViewCell.xib in Resources */,
+				B4A95D9519F4BAFB001282DF /* Main.storyboard in Resources */,
+				B4A95DEB19F4BB1A001282DF /* KHLoadMoreTableViewCell.xib in Resources */,
+				B4A95D9A19F4BAFB001282DF /* LaunchScreen.xib in Resources */,
+				B4A95D9719F4BAFB001282DF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A95D9D19F4BAFB001282DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4A95D8219F4BAFB001282DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A95DE619F4BB1A001282DF /* KHLoadingContentErrorTableViewCell.m in Sources */,
+				B4A95DF219F4BB1A001282DF /* KHLoadMoreSection.m in Sources */,
+				B4A95D9219F4BAFB001282DF /* ViewController.m in Sources */,
+				B4A95DF619F4BB1A001282DF /* KHOrderedDataProvider.m in Sources */,
+				B4A95DF719F4BB1A001282DF /* KHPopularImagesViewModel.m in Sources */,
+				B4A95DF019F4BB1A001282DF /* KHErrorLoadingMoreSectionModel.m in Sources */,
+				B4A95D8F19F4BAFB001282DF /* AppDelegate.m in Sources */,
+				B4A95D8C19F4BAFB001282DF /* main.m in Sources */,
+				B4A95DE519F4BB1A001282DF /* KHBasicFluentTableViewController.m in Sources */,
+				B4A95DF419F4BB1A001282DF /* KHFluentDataProvider.m in Sources */,
+				B4A95DEC19F4BB1A001282DF /* KHTableController.m in Sources */,
+				B4A95DF119F4BB1A001282DF /* KHImageSectionModel.m in Sources */,
+				B4A95DF519F4BB1A001282DF /* KHLoadingContentErrorViewModel.m in Sources */,
+				B4A95DED19F4BB1A001282DF /* KHBasicTableViewModel.m in Sources */,
+				B4A95DE819F4BB1A001282DF /* KHLoadingContentTableViewCell.m in Sources */,
+				B4A95DEF19F4BB1A001282DF /* KHBasicSectionModel.m in Sources */,
+				B4A95DF319F4BB1A001282DF /* KHDataLoadingOperation.m in Sources */,
+				B4A95DEE19F4BB1A001282DF /* KHContentLoadingCellFactory.m in Sources */,
+				B4A95DEA19F4BB1A001282DF /* KHLoadMoreTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A95D9B19F4BAFB001282DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A95DA619F4BAFB001282DF /* KHTableViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4A95DA119F4BAFB001282DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4A95D8519F4BAFB001282DF /* KHTableViewController */;
+			targetProxy = B4A95DA019F4BAFB001282DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4A95D9319F4BAFB001282DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4A95D9419F4BAFB001282DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4A95D9819F4BAFB001282DF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4A95D9919F4BAFB001282DF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4A95DA719F4BAFB001282DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B4A95DA819F4BAFB001282DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4A95DAA19F4BAFB001282DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KHTableViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B4A95DAB19F4BAFB001282DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KHTableViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B4A95DAD19F4BAFB001282DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KHTableViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KHTableViewController.app/KHTableViewController";
+			};
+			name = Debug;
+		};
+		B4A95DAE19F4BAFB001282DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KHTableViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KHTableViewController.app/KHTableViewController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4A95D8119F4BAFB001282DF /* Build configuration list for PBXProject "KHTableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4A95DA719F4BAFB001282DF /* Debug */,
+				B4A95DA819F4BAFB001282DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4A95DA919F4BAFB001282DF /* Build configuration list for PBXNativeTarget "KHTableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4A95DAA19F4BAFB001282DF /* Debug */,
+				B4A95DAB19F4BAFB001282DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B4A95DAC19F4BAFB001282DF /* Build configuration list for PBXNativeTarget "KHTableViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4A95DAD19F4BAFB001282DF /* Debug */,
+				B4A95DAE19F4BAFB001282DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4A95D7E19F4BAFB001282DF /* Project object */;
+}
