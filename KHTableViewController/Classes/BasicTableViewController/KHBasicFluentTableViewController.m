@@ -18,6 +18,8 @@
 >
 
 @property (strong, nonatomic) KHTableController *tableController;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property (nonatomic, assign) BOOL enableRefreshControl;
 
 @end
 
@@ -59,25 +61,17 @@
 	[super viewDidLoad];
 
     [self _checkIfSetupTableView];
+    [self _onRefresh];
+}
 
-	KHBasicTableViewModel *dataSection = [[KHBasicTableViewModel alloc] init];
-	id <KHTableViewSectionModel, KHContentLoadingProtocol> loadingTotalItems = [self getLoadingTotalPageObject];
-	loadingTotalItems.delegate = self;
-	dataSection.sectionModel = loadingTotalItems;
-
-	[loadingTotalItems loadContent];
-
-	self.tableController = [[KHTableController alloc] init];
-	self.tableController.model = dataSection;
-	self.tableController.cellFactory = [[KHContentLoadingCellFactory alloc] init];
-
-	self.tableView.dataSource = self.tableController;
-	self.tableView.delegate = self.tableController;
-
-	[self.tableView reloadData];
+- (void)setEnableRefreshControl:(BOOL)enableRefreshControl {
+    _enableRefreshControl = enableRefreshControl;
+    [self _shouldAddRefreshControl];
 }
 
 - (void)didLoadWithResultWithTotalPage:(NSInteger)totalItems error:(NSError *)error operation:(AFHTTPRequestOperation *)operation {
+
+    [self.refreshControl endRefreshing];
 
 	if (error) {
 		KHBasicTableViewModel *loadingContentErrorSection = [[KHBasicTableViewModel alloc] initWithModel:nil];
@@ -120,6 +114,39 @@
 	}];
 	[self.tableView reloadRowsAtIndexPaths:arrReloadRow withRowAnimation:UITableViewRowAnimationFade];
 	[self.tableView endUpdates];
+}
+
+- (void)_shouldAddRefreshControl {
+    if (!self.enableRefreshControl) {
+        return;
+    }
+
+    [self _addRefreshControl];
+}
+
+- (void)_addRefreshControl {
+    self.refreshControl = [[UIRefreshControl alloc] init];
+	[self.refreshControl addTarget:self action:@selector(_onRefresh) forControlEvents:UIControlEventValueChanged];
+	[self.tableView addSubview:self.refreshControl];
+}
+
+- (void)_onRefresh {
+    [self.refreshControl endRefreshing];
+	KHBasicTableViewModel *dataSection = [[KHBasicTableViewModel alloc] init];
+	id <KHTableViewSectionModel, KHContentLoadingProtocol> loadingTotalItems = [self getLoadingTotalPageObject];
+	loadingTotalItems.delegate = self;
+	dataSection.sectionModel = loadingTotalItems;
+
+	[loadingTotalItems loadContent];
+
+	self.tableController = [[KHTableController alloc] init];
+	self.tableController.model = dataSection;
+	self.tableController.cellFactory = [[KHContentLoadingCellFactory alloc] init];
+
+	self.tableView.dataSource = self.tableController;
+	self.tableView.delegate = self.tableController;
+
+    [self.tableView reloadData];
 }
 
 @end

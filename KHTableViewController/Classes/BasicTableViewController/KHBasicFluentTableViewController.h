@@ -24,4 +24,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) id<KHTableViewCellFactoryProtocol> cellFactory;
 
+- (void)setEnableRefreshControl:(BOOL)enableRefreshControl;
+
 @end
