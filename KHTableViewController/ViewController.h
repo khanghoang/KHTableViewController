@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "KHBasicFluentTableViewController.h"
+#import "KHBasicFluentCollectionViewController.h"
 
-@interface ViewController : KHBasicFluentTableViewController
+@interface ViewController : KHBasicFluentCollectionViewController
 
 
 @end

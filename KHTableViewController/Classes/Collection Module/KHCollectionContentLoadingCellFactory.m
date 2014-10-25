@@ -7,12 +7,12 @@
 //
 
 #import "KHCollectionContentLoadingCellFactory.h"
-#import "KHLoadingContentTableViewCell.h"
+#import "KHContentLoadingCollectionCell.h"
 
 @implementation KHCollectionContentLoadingCellFactory
 
 - (UICollectionViewCell<KHCellProtocol> *)collectionView:(UICollectionView *)collection cellAtIndexPath:(NSIndexPath *)indexPath withModel:(id<KHTableViewModel>)model {
-    UICollectionViewCell<KHCellProtocol> *cell = [self _getReusableCellWithClass:[KHLoadingContentTableViewCell class] collectionView:collection atIndexPath:indexPath];
+    UICollectionViewCell<KHCellProtocol> *cell = [self _getReusableCellWithClass:[KHContentLoadingCollectionCell class] collectionView:collection atIndexPath:indexPath];
     return cell;
 }
 

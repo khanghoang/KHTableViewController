@@ -12,10 +12,11 @@
 #import "ContentLoadingPopularViewModel.h"
 #import "KHLoadingContentErrorViewModel.h"
 #import "KHLoadingPopularOperation.h"
+#import "KHPopularCollectionCellFactory.h"
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -27,7 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.cellFactory = [[CellFactory1 alloc] init];
+    self.cellFactory = [[KHPopularCollectionCellFactory alloc] init];
     [self setEnableRefreshControl:YES];
 }
 
