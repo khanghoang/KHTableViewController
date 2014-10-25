@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		724A47EA55B0BC7D71344F66 /* libPods-KHTableViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB26024678D349BB0C84C24C /* libPods-KHTableViewController.a */; };
+		B48E7E0619F51170001AE856 /* KHBasicOrderedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48E7E0519F51170001AE856 /* KHBasicOrderedTableViewController.m */; };
 		B4A95D8C19F4BAFB001282DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95D8B19F4BAFB001282DF /* main.m */; };
 		B4A95D8F19F4BAFB001282DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95D8E19F4BAFB001282DF /* AppDelegate.m */; };
 		B4A95D9719F4BAFB001282DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A95D9619F4BAFB001282DF /* Images.xcassets */; };
@@ -62,6 +63,8 @@
 /* Begin PBXFileReference section */
 		0CDE483670D7525A98D0AEC7 /* Pods-KHTableViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHTableViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KHTableViewController/Pods-KHTableViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		73FF677A0382F18ADCDF3E86 /* Pods-KHTableViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHTableViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-KHTableViewController/Pods-KHTableViewController.release.xcconfig"; sourceTree = "<group>"; };
+		B48E7E0419F51170001AE856 /* KHBasicOrderedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBasicOrderedTableViewController.h; sourceTree = "<group>"; };
+		B48E7E0519F51170001AE856 /* KHBasicOrderedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicOrderedTableViewController.m; sourceTree = "<group>"; };
 		B4A95D8619F4BAFB001282DF /* KHTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A95D8A19F4BAFB001282DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4A95D8B19F4BAFB001282DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -283,6 +286,8 @@
 			children = (
 				B4A95E0919F4BE9F001282DF /* KHBasicFluentTableViewController.h */,
 				B4A95E0A19F4BE9F001282DF /* KHBasicFluentTableViewController.m */,
+				B48E7E0419F51170001AE856 /* KHBasicOrderedTableViewController.h */,
+				B48E7E0519F51170001AE856 /* KHBasicOrderedTableViewController.m */,
 			);
 			path = BasicTableViewController;
 			sourceTree = "<group>";
@@ -543,6 +548,7 @@
 				B4A95D8F19F4BAFB001282DF /* AppDelegate.m in Sources */,
 				B4A95E3D19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.m in Sources */,
 				B4A95E4919F4BE9F001282DF /* KHLoadMoreSection.m in Sources */,
+				B48E7E0619F51170001AE856 /* KHBasicOrderedTableViewController.m in Sources */,
 				B4A95E4719F4BE9F001282DF /* KHErrorLoadingMoreSectionModel.m in Sources */,
 				B4A95E6F19F4CE9A001282DF /* KHContentLoadingErrorCellFactory.m in Sources */,
 				B4A95E5419F4BF02001282DF /* KHLoadingFreshTodayOperation.m in Sources */,

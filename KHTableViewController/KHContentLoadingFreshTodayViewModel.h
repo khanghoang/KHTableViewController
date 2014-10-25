@@ -16,6 +16,4 @@
     KHTableViewSectionModel
 >
 
-
-
 @end
