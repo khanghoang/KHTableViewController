@@ -63,6 +63,7 @@
 /* Begin PBXFileReference section */
 		0CDE483670D7525A98D0AEC7 /* Pods-KHTableViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHTableViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KHTableViewController/Pods-KHTableViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		73FF677A0382F18ADCDF3E86 /* Pods-KHTableViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHTableViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-KHTableViewController/Pods-KHTableViewController.release.xcconfig"; sourceTree = "<group>"; };
+		B4208A2D19FBBB17004D348B /* KHCollectionViewCellFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCollectionViewCellFactoryProtocol.h; sourceTree = "<group>"; };
 		B48E7E0419F51170001AE856 /* KHBasicOrderedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBasicOrderedTableViewController.h; sourceTree = "<group>"; };
 		B48E7E0519F51170001AE856 /* KHBasicOrderedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicOrderedTableViewController.m; sourceTree = "<group>"; };
 		B4A95D8619F4BAFB001282DF /* KHTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +185,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B4208A2C19FBB9F7004D348B /* Collection Module */ = {
+			isa = PBXGroup;
+			children = (
+				B4208A2D19FBBB17004D348B /* KHCollectionViewCellFactoryProtocol.h */,
+			);
+			path = "Collection Module";
+			sourceTree = "<group>";
+		};
 		B4A95D7D19F4BAFB001282DF = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +277,7 @@
 		B4A95E0719F4BE9F001282DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B4208A2C19FBB9F7004D348B /* Collection Module */,
 				B4A95E0819F4BE9F001282DF /* BasicTableViewController */,
 				B4A95E0B19F4BE9F001282DF /* Cell */,
 				B4A95E1519F4BE9F001282DF /* KHTableViewController.h */,
