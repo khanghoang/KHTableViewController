@@ -7,7 +7,6 @@
 #import "KHOrderedDataProvider.h"
 #import "KHLoadingContentErrorViewModel.h"
 #import "KHContentLoadingSectionViewModel.h"
-#import "KHPopularCollectionCellFactory.h"
 
 @interface KHBasicOrderedCollectionViewController ()
 <
