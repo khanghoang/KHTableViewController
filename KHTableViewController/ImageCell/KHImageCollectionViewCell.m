@@ -9,7 +9,7 @@
 #import "KHImageCollectionViewCell.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
-@interface KHImageCollectionViewCell()
+@interface KHImageCollectionViewCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
@@ -19,19 +19,19 @@
 
 - (void)awakeFromNib {
 	// Initialization code
-    NSLayoutConstraint *constraintTop = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0];
-    NSLayoutConstraint *constraintBottom = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
-    NSLayoutConstraint *constraintLeading = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
-    NSLayoutConstraint *constraintTrailing = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
+	NSLayoutConstraint *constraintTop = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0];
+	NSLayoutConstraint *constraintBottom = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+	NSLayoutConstraint *constraintLeading = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+	NSLayoutConstraint *constraintTrailing = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
 
-    [self addConstraints:@[constraintTop, constraintBottom, constraintLeading, constraintTrailing]];
+	[self addConstraints:@[constraintTop, constraintBottom, constraintLeading, constraintTrailing]];
 
-    [self setNeedsUpdateConstraints];
-    [self layoutIfNeeded];
+	[self setNeedsUpdateConstraints];
+	[self layoutIfNeeded];
 }
 
 - (void)prepareForReuse {
-    [self.imgView setImage:nil];
+	[self.imgView setImage:nil];
 }
 
 - (void)configWithData:(id)data {
@@ -39,8 +39,10 @@
 		return;
 	}
 
-    NSString *strURL = [data[@"image_url"] firstObject];
-    [self.imgView setImageWithURL:[NSURL URLWithString:strURL]];
+	if ([data isKindOfClass:[NSDictionary class]]) {
+		NSString *strURL = [data[@"image_url"] firstObject];
+		[self.imgView setImageWithURL:[NSURL URLWithString:strURL]];
+	}
 }
 
 @end

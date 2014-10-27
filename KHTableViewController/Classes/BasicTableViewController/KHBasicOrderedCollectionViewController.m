@@ -60,10 +60,18 @@
 }
 
 - (void)dataProvider:(KHOrderedDataProvider *)dataProvider didLoadDataAtPage:(NSUInteger)page withItems:(NSArray *)items error:(NSError *)error {
-    KHBasicTableViewModel *content = [[KHBasicTableViewModel alloc] init];
+
+    // create loadmore section
+    KHBasicTableViewModel *loadMore = [[KHBasicTableViewModel alloc] initWithModel:nil];
+    loadMore.sectionModel = [[KHLoadMoreSection alloc] init];
+
+    // linked with content section
+    KHBasicTableViewModel *content = [[KHBasicTableViewModel alloc] initWithModel:loadMore];
     content.sectionModel = self.orderedDataProvider;
+
+    // set back to controller model
     self.collectionController.model = content;
-    self.collectionView.delegate = (id)self.collectionController;
+
     [self.collectionView reloadData];
 }
 

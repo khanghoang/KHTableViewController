@@ -19,7 +19,7 @@
 }
 
 - (id)objectAtIndex:(NSUInteger)index {
-    return @"Content is being loaded";
+    return [NSNull null];
 }
 
 @end
