@@ -9,6 +9,7 @@ target "KHTableViewController" do
     pod "LBDelegateMatrioska"
     pod "AWPagedArray"
     pod "AFNetworking"
+    pod "FLEX"
 
 end
 
