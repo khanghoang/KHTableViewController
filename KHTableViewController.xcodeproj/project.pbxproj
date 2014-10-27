@@ -292,6 +292,8 @@
 				B4A95E6219F4C151001282DF /* ContentLoadingPopularViewModel.m */,
 				B4A95E5E19F4C0AC001282DF /* CellFactory1.h */,
 				B4A95E5F19F4C0AC001282DF /* CellFactory1.m */,
+				B483D1C819FC0447003EAFE6 /* KHPopularCollectionCellFactory.h */,
+				B483D1C919FC0447003EAFE6 /* KHPopularCollectionCellFactory.m */,
 				B4A95E5819F4C07E001282DF /* KHContentLoadingFreshTodayViewModel.h */,
 				B4A95E5919F4C07E001282DF /* KHContentLoadingFreshTodayViewModel.m */,
 				B4A95E5519F4BF57001282DF /* KHLoadingPopularOperation.h */,
@@ -317,8 +319,6 @@
 				B4A95D9619F4BAFB001282DF /* Images.xcassets */,
 				B4A95D9819F4BAFB001282DF /* LaunchScreen.xib */,
 				B4A95D8919F4BAFB001282DF /* Supporting Files */,
-				B483D1C819FC0447003EAFE6 /* KHPopularCollectionCellFactory.h */,
-				B483D1C919FC0447003EAFE6 /* KHPopularCollectionCellFactory.m */,
 			);
 			path = KHTableViewController;
 			sourceTree = "<group>";
