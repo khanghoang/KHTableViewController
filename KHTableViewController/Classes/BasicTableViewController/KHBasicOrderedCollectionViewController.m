@@ -7,7 +7,8 @@
 #import "KHOrderedDataProvider.h"
 #import "KHLoadingFreshTodayOperation.h"
 #import "KHPopularCollectionCellFactory.h"
-#import "KHLoadingContentErrorViewModel.h"j
+#import "KHLoadingContentErrorViewModel.h"
+#import "KHContentLoadingSectionViewModel.h"
 
 @interface KHBasicOrderedCollectionViewController ()
 <
@@ -41,7 +42,7 @@
     self.collectionView.delegate = (id)self.collectionController;
 
     KHBasicTableViewModel *loadingContentSection = [[KHBasicTableViewModel alloc] init];
-    KHLoadingContentErrorViewModel *loadingSecionModel = [[KHLoadingContentErrorViewModel alloc] init];
+    KHContentLoadingSectionViewModel *loadingSecionModel = [[KHContentLoadingSectionViewModel alloc] init];
     loadingContentSection.sectionModel = loadingSecionModel;
 
     id<KHTableViewSectionModel> loadingContentViewModel = [self getLoadingContentViewModel];
