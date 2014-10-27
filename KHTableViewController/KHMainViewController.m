@@ -9,6 +9,7 @@
 #import "KHMainViewController.h"
 #import "ViewController.h"
 #import "KHFreshTodayImagesViewController.h"
+#import "KHFreshTodayCollectionViewController.h"
 
 typedef NS_ENUM (NSUInteger, kMainViewControllerSegmentValue) {
 	kMainViewControllerSegmentValuePopular = 0,
@@ -62,7 +63,7 @@ typedef NS_ENUM (NSUInteger, kMainViewControllerSegmentValue) {
 	if (type == kMainViewControllerSegmentValuePopular) {
 		vc = [[UIStoryboard storyboardWithName:@"Popular" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([ViewController class])];
     } else {
-		vc = [[UIStoryboard storyboardWithName:@"FreshToday" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([KHFreshTodayImagesViewController class])];
+		vc = [[UIStoryboard storyboardWithName:@"FreshTodayCollection" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([KHFreshTodayCollectionViewController class])];
     }
 
 	[vc willMoveToParentViewController:self];

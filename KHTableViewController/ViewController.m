@@ -13,6 +13,7 @@
 #import "KHLoadingContentErrorViewModel.h"
 #import "KHLoadingPopularOperation.h"
 #import "KHPopularCollectionCellFactory.h"
+#import <FLEX/FLEXManager.h>
 
 @interface ViewController ()
 
@@ -28,6 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[FLEXManager sharedManager] showExplorer];
     self.cellFactory = [[KHPopularCollectionCellFactory alloc] init];
     [self setEnableRefreshControl:YES];
 }

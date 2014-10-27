@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KHCollectionContentLoadingCellFactory.h"
 
 @interface KHBasicOrderedCollectionViewController : UIViewController
+
+@property (strong, nonatomic) id <KHCollectionViewCellFactoryProtocol> cellFactory;
 
 @end

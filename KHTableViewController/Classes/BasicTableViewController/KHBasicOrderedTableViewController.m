@@ -23,7 +23,7 @@
 @property (strong, nonatomic) LBDelegateMatrioska *chainDelegate;
 
 @property (strong, nonatomic) KHContentLoadingCellFactory *loadingCellFactory;
-@property (strong, nonatomic) id<KHContentLoadingProtocol, KHTableViewSectionModel> orderedDataProvider;
+@property (strong, nonatomic) id<KHTableViewSectionModel> orderedDataProvider;
 
 @end
 

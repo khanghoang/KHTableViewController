@@ -6,20 +6,22 @@
 #import "KHCollectionController.h"
 #import "KHOrderedDataProvider.h"
 #import "KHLoadingFreshTodayOperation.h"
+#import "KHPopularCollectionCellFactory.h"
+#import "KHLoadingContentErrorViewModel.h"j
 
 @interface KHBasicOrderedCollectionViewController ()
 <
     KHOrderedDataProtocol,
-    KHHandleContentLoadingProtocol
+    UICollectionViewDataSource
 >
 
-@property (weak, nonatomic) IBOutlet UITableView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) KHCollectionController *collectionController;
 @property (strong, nonatomic) KHBasicTableViewModel *basicModel;
 @property (strong, nonatomic) LBDelegateMatrioska *chainDelegate;
 
 @property (strong, nonatomic) KHContentLoadingCellFactory *loadingCellFactory;
-@property (strong, nonatomic) id<KHContentLoadingProtocol, KHTableViewSectionModel> orderedDataProvider;
+@property (strong, nonatomic) id<KHTableViewSectionModel> orderedDataProvider;
 
 @end
 
@@ -32,15 +34,20 @@
 - (void)viewDidLoad {
     self.collectionController = [[KHCollectionController alloc] init];
 
-    self.collectionView.dataSource = self.collectionController;
+    self.cellFactory = [[KHPopularCollectionCellFactory alloc] init];
     self.collectionController.cellFactory = self.cellFactory;
 
+    self.collectionView.dataSource = (id)self.collectionController;
+    self.collectionView.delegate = (id)self.collectionController;
+
     KHBasicTableViewModel *loadingContentSection = [[KHBasicTableViewModel alloc] init];
-    KHBasicSectionModel *loadingSecionModel = [[KHBasicSectionModel alloc] init];
+    KHLoadingContentErrorViewModel *loadingSecionModel = [[KHLoadingContentErrorViewModel alloc] init];
     loadingContentSection.sectionModel = loadingSecionModel;
 
-    id<KHContentLoadingProtocol, KHTableViewSectionModel> loadingContentViewModel = [self getLoadingContentViewModel];
-    loadingContentViewModel.delegate = (id)self;
+    id<KHTableViewSectionModel> loadingContentViewModel = [self getLoadingContentViewModel];
+
+    KHOrderedDataProvider *provider = (KHOrderedDataProvider *) loadingContentViewModel;
+    provider.delegate = self;
     self.orderedDataProvider = loadingContentViewModel;
 
     self.basicModel = loadingContentSection;
@@ -48,20 +55,27 @@
 
     [self.collectionView reloadData];
 
-    [loadingContentViewModel loadContent];
-}
-
-- (id<KHContentLoadingProtocol, KHTableViewSectionModel>)getLoadingContentViewModel {
-    return nil;
+    [provider startLoading];
 }
 
 - (void)dataProvider:(KHOrderedDataProvider *)dataProvider didLoadDataAtPage:(NSUInteger)page withItems:(NSArray *)items error:(NSError *)error {
+    KHBasicTableViewModel *content = [[KHBasicTableViewModel alloc] init];
+    content.sectionModel = self.orderedDataProvider;
+    self.collectionController.model = content;
+    self.collectionView.delegate = (id)self.collectionController;
+    [self.collectionView reloadData];
+}
 
+- (id<KHTableViewSectionModel>)getLoadingContentViewModel {
+    return nil;
 }
 
 - (id <KHLoadingOperationProtocol> )loadingOperationForSectionViewModel:(id <KHTableViewSectionModel> )viewModel forPage:(NSUInteger)page {
     return [[KHLoadingFreshTodayOperation alloc] initWithPage:page];
 }
 
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+}
 
 @end

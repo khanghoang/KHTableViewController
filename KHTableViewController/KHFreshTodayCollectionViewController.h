@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KHBasicOrderedCollectionViewController.h"
 
-@interface KHFreshTodayCollectionViewController : UIViewController
+@interface KHFreshTodayCollectionViewController : KHBasicOrderedCollectionViewController
 
 @end
