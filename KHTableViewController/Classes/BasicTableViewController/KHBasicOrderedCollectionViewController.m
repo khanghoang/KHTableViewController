@@ -5,15 +5,13 @@
 #import "KHContentLoadingCellFactory.h"
 #import "KHCollectionController.h"
 #import "KHOrderedDataProvider.h"
-#import "KHLoadingFreshTodayOperation.h"
 #import "KHPopularCollectionCellFactory.h"
 #import "KHLoadingContentErrorViewModel.h"
 #import "KHContentLoadingSectionViewModel.h"
 
 @interface KHBasicOrderedCollectionViewController ()
 <
-    KHOrderedDataProtocol,
-    UICollectionViewDataSource
+    KHOrderedDataProtocol
 >
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -80,7 +78,7 @@
 }
 
 - (id <KHLoadingOperationProtocol> )loadingOperationForSectionViewModel:(id <KHTableViewSectionModel> )viewModel forPage:(NSUInteger)page {
-    return [[KHLoadingFreshTodayOperation alloc] initWithPage:page];
+    return nil;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
