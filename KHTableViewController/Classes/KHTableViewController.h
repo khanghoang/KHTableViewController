@@ -23,8 +23,6 @@
 #import "KHLoadingOperationProtocol.h"
 #import "KHFluentDataProvider.h"
 
-#import "KHLoadingFreshTodayOperation.h"
-
 #import "KHTableViewCellFactoryProtocol.h"
 #import "KHTableViewModel.h"
 #import "KHTableViewSectionFactoryProtocol.h"
