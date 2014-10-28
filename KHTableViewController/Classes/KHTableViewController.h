@@ -28,8 +28,6 @@
 #import "KHTableViewSectionFactoryProtocol.h"
 #import "KHTableViewSectionModel.h"
 
-#import "KHPopularCollectionCellFactory.h"
-
 #pragma mark - Collection
 #import "KHCollectionViewCellFactoryProtocol.h"
 

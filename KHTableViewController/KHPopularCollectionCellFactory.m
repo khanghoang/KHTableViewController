@@ -10,6 +10,7 @@
 #import "KHLoadMoreSection.h"
 #import "KHLoadingContentTableViewCell.h"
 #import "KHLoadingContentErrorViewModel.h"
+#import "ContentLoadingPopularViewModel.h"
 #import "KHImageCollectionViewCell.h"
 #import "KHContentLoadingErrorCollectionViewCell.h"
 #import "KHContentLoadingCollectionCell.h"
@@ -21,6 +22,10 @@
 		return CGSizeMake(collectionView.frame.size.width, 40);
 	}
 
+	if ([[model sectionAtIndex:indexPath.section] isKindOfClass:[ContentLoadingPopularViewModel class]]) {
+		return collectionView.frame.size;
+	}
+
 	if ([[model sectionAtIndex:indexPath.section] isKindOfClass:[KHLoadingContentErrorViewModel class]]) {
 		return collectionView.frame.size;
 	}
@@ -30,6 +35,9 @@
 }
 
 - (UICollectionViewCell<KHCellProtocol> *)collectionView:(UICollectionView *)collection cellAtIndexPath:(NSIndexPath *)indexPath withModel:(id<KHTableViewModel>)model {
+	if ([[model sectionAtIndex:indexPath.section] isKindOfClass:[ContentLoadingPopularViewModel class]]) {
+        return [self _getReusableCellWithClass:[KHContentLoadingCollectionCell class] collectionView:collection atIndexPath:indexPath];
+	}
 
 	if ([[model sectionAtIndex:indexPath.section] isKindOfClass:[KHLoadingContentErrorViewModel class]]) {
         return [self _getReusableCellWithClass:[KHContentLoadingErrorCollectionViewCell class] collectionView:collection atIndexPath:indexPath];
