@@ -9,7 +9,6 @@
 #import "KHBasicOrderedTableViewController.h"
 #import "KHContentLoadingCellFactory.h"
 #import "KHOrderedDataProvider.h"
-#import "KHLoadingFreshTodayOperation.h"
 
 @interface KHBasicOrderedTableViewController()
 <
