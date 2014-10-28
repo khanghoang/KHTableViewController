@@ -10,6 +10,7 @@
 #import "KHLoadingFreshTodayOperation.h"
 #import "KHTableViewSectionModel.h"
 #import "KHOrderedDataProvider.h"
+#import "KHPopularCollectionCellFactory.h"
 
 @interface KHFreshTodayCollectionViewController ()
 
@@ -18,6 +19,10 @@
 @end
 
 @implementation KHFreshTodayCollectionViewController
+
+- (id<KHCollectionViewCellFactoryProtocol>)cellFactory {
+    return [[KHPopularCollectionCellFactory alloc] init];
+}
 
 - (id<KHTableViewSectionModel>)getLoadingContentViewModel {
     return [[KHOrderedDataProvider alloc] init];
