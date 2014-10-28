@@ -59,11 +59,11 @@
 }
 
 - (void)dataProvider:(KHOrderedDataProvider *)dataProvider didLoadDataAtPage:(NSUInteger)page withItems:(NSArray *)items error:(NSError *)error {
-
+    return;
 }
 
 - (id <KHLoadingOperationProtocol> )loadingOperationForSectionViewModel:(id <KHTableViewSectionModel> )viewModel forPage:(NSUInteger)page {
-    return [[KHLoadingFreshTodayOperation alloc] initWithPage:page];
+    return nil;
 }
 
 
