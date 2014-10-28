@@ -32,7 +32,6 @@
 - (void)viewDidLoad {
     self.collectionController = [[KHCollectionController alloc] init];
 
-    self.cellFactory = [[KHPopularCollectionCellFactory alloc] init];
     self.collectionController.cellFactory = self.cellFactory;
 
     self.collectionView.dataSource = (id)self.collectionController;
