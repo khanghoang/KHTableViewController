@@ -15,6 +15,7 @@
 		B445AF3219FE4F0A00693CD0 /* KHContentLoadingSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B445AF3119FE4F0A00693CD0 /* KHContentLoadingSectionViewModel.m */; };
 		B445AF3719FE595E00693CD0 /* KHBasicFluentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B445AF3419FE595E00693CD0 /* KHBasicFluentCollectionViewController.m */; };
 		B445AF3819FE595E00693CD0 /* KHBasicOrderedCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B445AF3619FE595E00693CD0 /* KHBasicOrderedCollectionViewController.m */; };
+		B454738A1A00AF920059256C /* KHSuperCollectionCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B45473891A00AF920059256C /* KHSuperCollectionCellFactory.m */; };
 		B483D1B819FBFAA6003EAFE6 /* KHContentLoadingCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B483D1B719FBFAA6003EAFE6 /* KHContentLoadingCollectionCell.m */; };
 		B483D1BA19FBFB98003EAFE6 /* KHContentLoadingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B483D1B919FBFB98003EAFE6 /* KHContentLoadingCollectionCell.xib */; };
 		B483D1C619FC019B003EAFE6 /* KHImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B483D1C419FC019B003EAFE6 /* KHImageCollectionViewCell.m */; };
@@ -91,6 +92,8 @@
 		B445AF3419FE595E00693CD0 /* KHBasicFluentCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicFluentCollectionViewController.m; sourceTree = "<group>"; };
 		B445AF3519FE595E00693CD0 /* KHBasicOrderedCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBasicOrderedCollectionViewController.h; sourceTree = "<group>"; };
 		B445AF3619FE595E00693CD0 /* KHBasicOrderedCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicOrderedCollectionViewController.m; sourceTree = "<group>"; };
+		B45473881A00AF920059256C /* KHSuperCollectionCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHSuperCollectionCellFactory.h; sourceTree = "<group>"; };
+		B45473891A00AF920059256C /* KHSuperCollectionCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHSuperCollectionCellFactory.m; sourceTree = "<group>"; };
 		B483D1B619FBFAA6003EAFE6 /* KHContentLoadingCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHContentLoadingCollectionCell.h; sourceTree = "<group>"; };
 		B483D1B719FBFAA6003EAFE6 /* KHContentLoadingCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHContentLoadingCollectionCell.m; sourceTree = "<group>"; };
 		B483D1B919FBFB98003EAFE6 /* KHContentLoadingCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHContentLoadingCollectionCell.xib; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 				B4208A2F19FBBEA1004D348B /* KHCollectionContentLoadingCellFactory.m */,
 				B43DB75A19FC130800AD9BCF /* KHCollectionController.h */,
 				B43DB75B19FC130800AD9BCF /* KHCollectionController.m */,
+				B45473881A00AF920059256C /* KHSuperCollectionCellFactory.h */,
+				B45473891A00AF920059256C /* KHSuperCollectionCellFactory.m */,
 			);
 			path = "Collection Module";
 			sourceTree = "<group>";
@@ -644,6 +649,7 @@
 				B4A95D8F19F4BAFB001282DF /* AppDelegate.m in Sources */,
 				B4A95E3D19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.m in Sources */,
 				B4A95E4919F4BE9F001282DF /* KHLoadMoreSection.m in Sources */,
+				B454738A1A00AF920059256C /* KHSuperCollectionCellFactory.m in Sources */,
 				B445AF3719FE595E00693CD0 /* KHBasicFluentCollectionViewController.m in Sources */,
 				B48E7E0619F51170001AE856 /* KHBasicOrderedTableViewController.m in Sources */,
 				B4208A3019FBBEA1004D348B /* KHCollectionContentLoadingCellFactory.m in Sources */,
