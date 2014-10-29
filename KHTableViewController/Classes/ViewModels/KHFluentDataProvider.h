@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Alek Åström. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 @class KHFluentDataProvider;
 @protocol KHDataProviderDelegate<NSObject>
