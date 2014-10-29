@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "KHTableViewCellFactoryProtocol.h"
+#import "KHSuperTableViewCellFactory.h"
 
-@interface CellFactory1 : NSObject
+@interface CellFactory1 : KHSuperTableViewCellFactory
 <
 KHTableViewCellFactoryProtocol
 >
