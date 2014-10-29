@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "KHCollectionViewCellFactoryProtocol.h"
+#import "KHSuperCollectionCellFactory.h"
 
-@interface KHCollectionContentLoadingCellFactory : NSObject
+@interface KHCollectionContentLoadingCellFactory : KHSuperCollectionCellFactory
 <
 KHCollectionViewCellFactoryProtocol
 >

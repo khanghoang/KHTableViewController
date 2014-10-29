@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "KHTableViewController.h"
+#import "KHSuperTableViewCellFactory.h"
 
-@interface KHContentLoadingCellFactory : NSObject
+@interface KHContentLoadingCellFactory : KHSuperTableViewCellFactory
 <
     KHTableViewCellFactoryProtocol
 >

@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "KHCollectionViewCellFactoryProtocol.h"
+#import "KHSuperCollectionCellFactory.h"
 
-@interface KHPopularCollectionCellFactory : NSObject
+@interface KHPopularCollectionCellFactory : KHSuperCollectionCellFactory
 <
 KHCollectionViewCellFactoryProtocol
 >
