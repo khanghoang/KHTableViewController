@@ -16,8 +16,21 @@
 
 @implementation KHLoadMoreTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        UILabel *errorLoading = [[UILabel alloc] init];
+        errorLoading.text = @"Loading";
+        self.lblLoading = errorLoading;
+        [self addSubview:errorLoading];
+        NSLayoutConstraint *centerX = [NSLayoutConstraint constraintWithItem:errorLoading attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
+        NSLayoutConstraint *centerY = [NSLayoutConstraint constraintWithItem:errorLoading attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1 constant:0];
+        [self addConstraints:@[centerX, centerY]];
+        [self setNeedsUpdateConstraints];
+        [self layoutIfNeeded];
+    }
+
+    return self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

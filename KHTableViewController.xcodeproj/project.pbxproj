@@ -35,11 +35,8 @@
 		B4A95E0619F4BC62001282DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E0019F4BC62001282DF /* ViewController.m */; };
 		B4A95E3C19F4BE9F001282DF /* KHBasicFluentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E0A19F4BE9F001282DF /* KHBasicFluentTableViewController.m */; };
 		B4A95E3D19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E0D19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.m */; };
-		B4A95E3E19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A95E0E19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.xib */; };
 		B4A95E3F19F4BE9F001282DF /* KHLoadingContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E1019F4BE9F001282DF /* KHLoadingContentTableViewCell.m */; };
-		B4A95E4019F4BE9F001282DF /* KHLoadingContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A95E1119F4BE9F001282DF /* KHLoadingContentTableViewCell.xib */; };
 		B4A95E4119F4BE9F001282DF /* KHLoadMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E1319F4BE9F001282DF /* KHLoadMoreTableViewCell.m */; };
-		B4A95E4219F4BE9F001282DF /* KHLoadMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A95E1419F4BE9F001282DF /* KHLoadMoreTableViewCell.xib */; };
 		B4A95E4319F4BE9F001282DF /* KHTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E1819F4BE9F001282DF /* KHTableController.m */; };
 		B4A95E4419F4BE9F001282DF /* KHBasicTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E1E19F4BE9F001282DF /* KHBasicTableViewModel.m */; };
 		B4A95E4619F4BE9F001282DF /* KHBasicSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A95E2619F4BE9F001282DF /* KHBasicSectionModel.m */; };
@@ -127,13 +124,10 @@
 		B4A95E0A19F4BE9F001282DF /* KHBasicFluentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicFluentTableViewController.m; sourceTree = "<group>"; };
 		B4A95E0C19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadingContentErrorTableViewCell.h; sourceTree = "<group>"; };
 		B4A95E0D19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadingContentErrorTableViewCell.m; sourceTree = "<group>"; };
-		B4A95E0E19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHLoadingContentErrorTableViewCell.xib; sourceTree = "<group>"; };
 		B4A95E0F19F4BE9F001282DF /* KHLoadingContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadingContentTableViewCell.h; sourceTree = "<group>"; };
 		B4A95E1019F4BE9F001282DF /* KHLoadingContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadingContentTableViewCell.m; sourceTree = "<group>"; };
-		B4A95E1119F4BE9F001282DF /* KHLoadingContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHLoadingContentTableViewCell.xib; sourceTree = "<group>"; };
 		B4A95E1219F4BE9F001282DF /* KHLoadMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadMoreTableViewCell.h; sourceTree = "<group>"; };
 		B4A95E1319F4BE9F001282DF /* KHLoadMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadMoreTableViewCell.m; sourceTree = "<group>"; };
-		B4A95E1419F4BE9F001282DF /* KHLoadMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHLoadMoreTableViewCell.xib; sourceTree = "<group>"; };
 		B4A95E1519F4BE9F001282DF /* KHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableViewController.h; sourceTree = "<group>"; };
 		B4A95E1719F4BE9F001282DF /* KHTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHTableController.h; sourceTree = "<group>"; };
 		B4A95E1819F4BE9F001282DF /* KHTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHTableController.m; sourceTree = "<group>"; };
@@ -386,13 +380,10 @@
 			children = (
 				B4A95E0C19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.h */,
 				B4A95E0D19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.m */,
-				B4A95E0E19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.xib */,
 				B4A95E0F19F4BE9F001282DF /* KHLoadingContentTableViewCell.h */,
 				B4A95E1019F4BE9F001282DF /* KHLoadingContentTableViewCell.m */,
-				B4A95E1119F4BE9F001282DF /* KHLoadingContentTableViewCell.xib */,
 				B4A95E1219F4BE9F001282DF /* KHLoadMoreTableViewCell.h */,
 				B4A95E1319F4BE9F001282DF /* KHLoadMoreTableViewCell.m */,
-				B4A95E1419F4BE9F001282DF /* KHLoadMoreTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -568,14 +559,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A95E3E19F4BE9F001282DF /* KHLoadingContentErrorTableViewCell.xib in Resources */,
 				B4A95DF919F4BBFC001282DF /* Main.storyboard in Resources */,
-				B4A95E4019F4BE9F001282DF /* KHLoadingContentTableViewCell.xib in Resources */,
 				B483D1C719FC019B003EAFE6 /* KHImageCollectionViewCell.xib in Resources */,
 				B4A95DFC19F4BC0A001282DF /* Popular.storyboard in Resources */,
 				B4A95E6919F4C1BA001282DF /* KHImageTableViewCell.xib in Resources */,
 				B4A95DFD19F4BC0A001282DF /* FreshToday.storyboard in Resources */,
-				B4A95E4219F4BE9F001282DF /* KHLoadMoreTableViewCell.xib in Resources */,
 				B48AF8A619FCF0260051AF5B /* FreshTodayCollection.storyboard in Resources */,
 				B4A95D9A19F4BAFB001282DF /* LaunchScreen.xib in Resources */,
 				B4A95D9719F4BAFB001282DF /* Images.xcassets in Resources */,

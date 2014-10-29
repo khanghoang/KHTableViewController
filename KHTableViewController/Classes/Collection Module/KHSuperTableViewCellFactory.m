@@ -19,7 +19,13 @@
 
 - (void)_registerTheClass:(Class)cellClass toTableView:(UITableView *)tableView {
 	UINib *cellNib = [UINib nibWithNibName:NSStringFromClass(cellClass) bundle:nil];
-	[tableView registerNib:cellNib forCellReuseIdentifier:NSStringFromClass(cellClass)];
+	if (cellNib) {
+		[tableView registerNib:cellNib forCellReuseIdentifier:NSStringFromClass(cellClass)];
+		return;
+	}
+
+	[tableView registerClass:cellClass forCellReuseIdentifier:NSStringFromClass(cellClass)];
+	return;
 }
 
 - (UITableViewCell <KHCellProtocol> *)_dequeueReuseableCellWithClass:(Class)cellClass ofTableView:(UITableView *)tableView {
