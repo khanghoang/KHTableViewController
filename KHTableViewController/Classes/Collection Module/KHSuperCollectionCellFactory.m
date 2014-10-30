@@ -16,13 +16,21 @@
 }
 
 - (void)_registerTheClass:(Class)cellClass toCollectionView:(UICollectionView *)collectionView {
-	UINib *cellNib = [UINib nibWithNibName:NSStringFromClass(cellClass) bundle:nil];
-	if (cellNib) {
-		[collectionView registerNib:cellNib forCellWithReuseIdentifier:NSStringFromClass(cellClass)];
-		return;
+	NSArray *nibArray = @[];
+
+	if ([[NSBundle mainBundle] pathForResource:NSStringFromClass(cellClass) ofType:@"nib"] != nil) {
+		nibArray = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(cellClass) owner:nil options:nil];
+		if (nibArray.count > 0) {
+			UINib *nib = [UINib nibWithNibName:NSStringFromClass(cellClass) bundle:nil];
+			[collectionView registerNib:nib forCellWithReuseIdentifier:NSStringFromClass(cellClass)];
+			return;
+		}
 	}
 
 	[collectionView registerClass:cellClass forCellWithReuseIdentifier:NSStringFromClass(cellClass)];
+	return;
+
+	NSAssert(nil, @"Can't register cell class");
 }
 
 - (UICollectionViewCell <KHCellProtocol> *)_dequeueReuseableCellWithClass:(Class)cellClass ofCollectionView:(UICollectionView *)collectionView atIndexPath:(NSIndexPath *)indexPath {
