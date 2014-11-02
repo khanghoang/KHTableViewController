@@ -27,6 +27,8 @@
 >
 
 @property (nonatomic, weak) id<KHOrderedDataProtocol> delegate;
+@property (assign, nonatomic, readonly) BOOL isReachMaxPage;
+
 - (void)startLoading;
 
 @end

@@ -12,7 +12,7 @@
 
 @property (assign, nonatomic) NSInteger currentPage;
 @property (assign, nonatomic) BOOL isLoadingNextPage;
-@property (assign, nonatomic) BOOL isReachMaxPage;
+@property (assign, nonatomic, readwrite) BOOL isReachMaxPage;
 @property (strong, nonatomic) NSBlockOperation *loadingOperation;
 @property (strong, nonatomic) NSMutableArray *arrItems;
 
