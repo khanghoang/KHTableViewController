@@ -14,5 +14,6 @@
 @property (strong, nonatomic) id <KHCollectionViewCellFactoryProtocol> cellFactory;
 
 - (void)enablePullToRefresh;
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

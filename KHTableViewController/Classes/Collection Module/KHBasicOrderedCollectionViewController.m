@@ -74,6 +74,10 @@ KHOrderedDataProtocol
 
 #pragma mark - Public
 
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath {
+    return [self.orderedDataProvider objectAtIndex:indexPath.item];
+}
+
 - (void)enablePullToRefresh {
     [self _addPullRefresh];
 }
