@@ -20,6 +20,11 @@
 
 @implementation KHFreshTodayCollectionViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self enablePullToRefresh];
+}
+
 - (id<KHCollectionViewCellFactoryProtocol>)cellFactory {
     return [[KHPopularCollectionCellFactory alloc] init];
 }
