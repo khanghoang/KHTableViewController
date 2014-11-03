@@ -13,4 +13,6 @@
 
 @property (strong, nonatomic) id <KHCollectionViewCellFactoryProtocol> cellFactory;
 
+- (void)enablePullToRefresh;
+
 @end
