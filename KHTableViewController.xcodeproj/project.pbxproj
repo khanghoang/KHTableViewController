@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		724A47EA55B0BC7D71344F66 /* libPods-KHTableViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB26024678D349BB0C84C24C /* libPods-KHTableViewController.a */; };
 		B4208A3019FBBEA1004D348B /* KHCollectionContentLoadingCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4208A2F19FBBEA1004D348B /* KHCollectionContentLoadingCellFactory.m */; };
+		B42B638F1A09D16D0082D36B /* KHFreshTodayCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42B638E1A09D16D0082D36B /* KHFreshTodayCollectionViewController.xib */; };
 		B43DB75819FC077500AD9BCF /* KHContentLoadingErrorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B43DB75619FC077500AD9BCF /* KHContentLoadingErrorCollectionViewCell.m */; };
 		B43DB75C19FC130800AD9BCF /* KHCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43DB75B19FC130800AD9BCF /* KHCollectionController.m */; };
 		B445AF3219FE4F0A00693CD0 /* KHContentLoadingSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B445AF3119FE4F0A00693CD0 /* KHContentLoadingSectionViewModel.m */; };
@@ -77,6 +78,7 @@
 		B4208A2D19FBBB17004D348B /* KHCollectionViewCellFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCollectionViewCellFactoryProtocol.h; sourceTree = "<group>"; };
 		B4208A2E19FBBEA1004D348B /* KHCollectionContentLoadingCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCollectionContentLoadingCellFactory.h; sourceTree = "<group>"; };
 		B4208A2F19FBBEA1004D348B /* KHCollectionContentLoadingCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHCollectionContentLoadingCellFactory.m; sourceTree = "<group>"; };
+		B42B638E1A09D16D0082D36B /* KHFreshTodayCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHFreshTodayCollectionViewController.xib; sourceTree = "<group>"; };
 		B43DB75519FC077500AD9BCF /* KHContentLoadingErrorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHContentLoadingErrorCollectionViewCell.h; sourceTree = "<group>"; };
 		B43DB75619FC077500AD9BCF /* KHContentLoadingErrorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHContentLoadingErrorCollectionViewCell.m; sourceTree = "<group>"; };
 		B43DB75A19FC130800AD9BCF /* KHCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCollectionController.h; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 				B4A95DFE19F4BC62001282DF /* KHFreshTodayImagesViewController.m */,
 				B48AF8A719FCF2A10051AF5B /* KHFreshTodayCollectionViewController.h */,
 				B48AF8A819FCF2A10051AF5B /* KHFreshTodayCollectionViewController.m */,
+				B42B638E1A09D16D0082D36B /* KHFreshTodayCollectionViewController.xib */,
 				B4A95E5B19F4C09C001282DF /* KHFreshTodayCellFactory.h */,
 				B4A95E5C19F4C09C001282DF /* KHFreshTodayCellFactory.m */,
 				B4A95E0319F4BC62001282DF /* KHMainViewController.h */,
@@ -560,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4A95DF919F4BBFC001282DF /* Main.storyboard in Resources */,
+				B42B638F1A09D16D0082D36B /* KHFreshTodayCollectionViewController.xib in Resources */,
 				B483D1C719FC019B003EAFE6 /* KHImageCollectionViewCell.xib in Resources */,
 				B4A95DFC19F4BC0A001282DF /* Popular.storyboard in Resources */,
 				B4A95E6919F4C1BA001282DF /* KHImageTableViewCell.xib in Resources */,

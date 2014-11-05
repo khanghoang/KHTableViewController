@@ -27,10 +27,6 @@ KHOrderedDataProtocol
 
 @implementation KHBasicOrderedCollectionViewController
 
-- (void)loadView {
-    [super loadView];
-}
-
 - (void)viewDidLoad {
     self.collectionController = [[KHCollectionController alloc] init];
 

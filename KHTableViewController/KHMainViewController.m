@@ -63,7 +63,8 @@ typedef NS_ENUM (NSUInteger, kMainViewControllerSegmentValue) {
 	if (type == kMainViewControllerSegmentValuePopular) {
 		vc = [[UIStoryboard storyboardWithName:@"Popular" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([ViewController class])];
     } else {
-		vc = [[UIStoryboard storyboardWithName:@"FreshTodayCollection" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([KHFreshTodayCollectionViewController class])];
+        vc = (UIViewController *) [[KHFreshTodayCollectionViewController alloc] init];
+//		vc = [[UIStoryboard storyboardWithName:@"FreshTodayCollection" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([KHFreshTodayCollectionViewController class])];
     }
 
 	[vc willMoveToParentViewController:self];
