@@ -46,6 +46,14 @@
     return [self.arrItems objectAtIndex:index];
 }
 
+- (id)objectAtIndex:(NSUInteger)index withTriggerPagination:(BOOL)pagination {
+    if (pagination) {
+        return [self objectAtIndex:index];
+    }
+
+    return [self.arrItems objectAtIndex:index];
+}
+
 #pragma mark - Public method
 
 - (void)startLoading {
