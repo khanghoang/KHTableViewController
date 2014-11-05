@@ -23,6 +23,8 @@
 @property (strong, nonatomic) KHContentLoadingCellFactory *loadingCellFactory;
 @property (strong, nonatomic) id <KHTableViewSectionModel> orderedDataProvider;
 
+@property (strong, nonatomic) UICollectionViewFlowLayout *originLayout;
+
 @end
 
 @implementation KHBasicOrderedCollectionViewController
@@ -34,6 +36,8 @@
 
 	self.collectionView.dataSource = (id)self.collectionController;
 	self.collectionView.delegate = (id)self.collectionController;
+
+    self.originLayout = (id)self.collectionView.collectionViewLayout;
 
 	[self _onRefresh];
 }
@@ -52,6 +56,8 @@
 
 	// set back to controller model
 	self.collectionController.model = content;
+
+	[self _setShouldCollectionViewLayout];
 
 	[self.collectionView reloadData];
 }
@@ -99,23 +105,30 @@
 
 	self.basicModel = loadingContentSection;
 	self.collectionController.model = self.basicModel;
-	[self _setShouldCollectionViewLayout];
+
+	[self _setBackToCollectionViewLayout];
 
 	[self.collectionView reloadData];
 
 	[provider startLoading];
 }
 
+- (void)_setBackToCollectionViewLayout {
+    UICollectionViewFlowLayout *flowLayout = self.originLayout;
+    [flowLayout setItemSize:self.collectionView.frame.size];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+	self.collectionView.collectionViewLayout = flowLayout;
+	[self.collectionView.collectionViewLayout invalidateLayout];
+	return;
+}
+
 - (void)_setShouldCollectionViewLayout {
 	if ([self respondsToSelector:@selector(getCollectionViewLayout)] && [self getCollectionViewLayout]) {
 		UICollectionViewLayout *layout = [self getCollectionViewLayout];
 		self.collectionView.collectionViewLayout = layout;
+		[self.collectionView.collectionViewLayout invalidateLayout];
 		return;
 	}
-
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    self.collectionView.collectionViewLayout = flowLayout;
-	return;
 }
 
 - (UICollectionViewLayout *)getCollectionViewLayout {
