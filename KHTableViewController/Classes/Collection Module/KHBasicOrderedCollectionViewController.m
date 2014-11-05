@@ -76,6 +76,10 @@
 
 #pragma mark - Public
 
+- (void)reloadAlData {
+    [self _onRefresh];
+}
+
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath {
 	return [self.orderedDataProvider objectAtIndex:indexPath.item];
 }
