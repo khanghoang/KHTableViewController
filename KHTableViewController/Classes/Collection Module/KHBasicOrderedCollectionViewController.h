@@ -12,10 +12,14 @@
 
 @protocol KHBasicOrderedCollectionViewControllerProtocol <NSObject>
 
+@required
 - (UICollectionView *)collectionView;
 - (id<KHCollectionViewCellFactoryProtocol>)cellFactory;
 - (id<KHTableViewSectionModel>)getLoadingContentViewModel;
 - (id <KHLoadingOperationProtocol> )loadingOperationForSectionViewModel:(id <KHTableViewSectionModel> )viewModel forPage:(NSUInteger)page;
+
+@optional
+- (UICollectionViewLayout *)getCollectionViewLayout;
 
 @end
 
