@@ -10,5 +10,8 @@
 #import "KHBasicOrderedCollectionViewController.h"
 
 @interface KHFreshTodayCollectionViewController : KHBasicOrderedCollectionViewController
+<
+KHBasicOrderedCollectionViewControllerProtocol
+>
 
 @end

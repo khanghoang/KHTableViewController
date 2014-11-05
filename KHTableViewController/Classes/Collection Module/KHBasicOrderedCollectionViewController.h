@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "KHCollectionContentLoadingCellFactory.h"
+#import "KHLoadingOperationProtocol.h"
+
+@protocol KHBasicOrderedCollectionViewControllerProtocol <NSObject>
+
+- (UICollectionView *)collectionView;
+- (id<KHCollectionViewCellFactoryProtocol>)cellFactory;
+- (id<KHTableViewSectionModel>)getLoadingContentViewModel;
+- (id <KHLoadingOperationProtocol> )loadingOperationForSectionViewModel:(id <KHTableViewSectionModel> )viewModel forPage:(NSUInteger)page;
+
+@end
 
 @interface KHBasicOrderedCollectionViewController : UIViewController
 

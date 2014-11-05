@@ -20,6 +20,10 @@
 
 @implementation KHFreshTodayCollectionViewController
 
+- (UICollectionView *)collectionView {
+    return _collectionView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self enablePullToRefresh];
