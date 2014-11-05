@@ -6,3 +6,6 @@ TODO list
 - ~~Basic Ordered Collection View. Need to remove "Load more cell" when reach the end of data.~~
 - ~~Handle custom collection view layout.~~
 - ~~Check pull to refresh.~~
+- Empty data screen.
+- Loading error screen.
+- Error when loading more.
