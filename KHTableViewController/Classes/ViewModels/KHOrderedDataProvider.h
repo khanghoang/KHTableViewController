@@ -30,5 +30,6 @@
 @property (assign, nonatomic, readonly) BOOL isReachMaxPage;
 
 - (void)startLoading;
+- (id)objectAtIndex:(NSUInteger)index withTriggerPagination:(BOOL)pagination;
 
 @end
