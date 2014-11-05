@@ -128,6 +128,11 @@ KHOrderedDataProtocol
 }
 
 - (void)_setShouldCollectionViewLayout {
+    // if it isn't the loading flow layout means that it was changed alr
+    if (![self.collectionView.collectionViewLayout isEqual:self.originLayout]) {
+        return;
+    }
+
     if ([self respondsToSelector:@selector(getCollectionViewLayout)] && [self getCollectionViewLayout]) {
         UICollectionViewLayout *layout = [self getCollectionViewLayout];
         self.collectionView.collectionViewLayout = layout;
