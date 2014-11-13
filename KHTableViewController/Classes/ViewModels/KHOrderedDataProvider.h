@@ -29,6 +29,8 @@
 @property (nonatomic, weak) id<KHOrderedDataProtocol> delegate;
 @property (assign, nonatomic, readonly) BOOL isReachMaxPage;
 
+@property (assign, nonatomic) BOOL reversed;
+
 - (void)startLoading;
 - (id)objectAtIndex:(NSUInteger)index withTriggerPagination:(BOOL)pagination;
 

@@ -35,23 +35,31 @@
 #pragma mark - KHTableViewSectionModel interface
 
 - (NSUInteger)count {
-    return [self.arrItems count];
+	return [self.arrItems count];
 }
 
 - (id)objectAtIndex:(NSUInteger)index {
-    if (index == self.arrItems.count-1) {
-        [self _setShouldLoadDataForNextPage];
-    }
+	if (self.reversed) {
+		return [self _objectAtIndex:(self.arrItems.count - index - 1)];
+	}
 
-    return [self.arrItems objectAtIndex:index];
+    return [self _objectAtIndex:index];
 }
 
 - (id)objectAtIndex:(NSUInteger)index withTriggerPagination:(BOOL)pagination {
-    if (pagination) {
-        return [self objectAtIndex:index];
-    }
+	if (pagination) {
+		return [self _objectAtIndex:index];
+	}
 
-    return [self.arrItems objectAtIndex:index];
+	return [self.arrItems objectAtIndex:index];
+}
+
+- (id)_objectAtIndex:(NSUInteger)index {
+	if (index == self.arrItems.count - 1) {
+		[self _setShouldLoadDataForNextPage];
+	}
+
+	return [self.arrItems objectAtIndex:index];
 }
 
 #pragma mark - Public method
