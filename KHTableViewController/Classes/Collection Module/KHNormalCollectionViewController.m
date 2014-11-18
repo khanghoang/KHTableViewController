@@ -1,16 +1,21 @@
+//
+//  KHNormalCollectionViewController.m
+//  KHTableViewController
+//
+//  Created by Triệu Khang on 18/11/14.
 //  Copyright (c) 2014 Triệu Khang. All rights reserved.
 //
 
-#import "KHBasicOrderedCollectionViewController.h"
+#import "KHNormalCollectionViewController.h"
 #import "KHContentLoadingCellFactory.h"
 #import "KHCollectionController.h"
-#import "KHOrderedDataProvider.h"
+#import "KHNormalDataProvider.h"
 #import "KHLoadingContentErrorViewModel.h"
 #import "KHContentLoadingSectionViewModel.h"
 
-@interface KHBasicOrderedCollectionViewController ()
+@interface KHNormalCollectionViewController ()
 <
-KHOrderedDataProtocol
+    KHNormalDataProviderProtocol
 >
 
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
@@ -21,16 +26,18 @@ KHOrderedDataProtocol
 @property (strong, nonatomic) LBDelegateMatrioska *chainDelegate;
 
 @property (strong, nonatomic) KHContentLoadingCellFactory *loadingCellFactory;
-@property (strong, nonatomic) id <KHTableViewSectionModel> orderedDataProvider;
+@property (strong, nonatomic) id <KHTableViewSectionModel> dataProvider;
 
 @property (strong, nonatomic) UICollectionViewFlowLayout *originLayout;
 
+
 @end
 
-@implementation KHBasicOrderedCollectionViewController
+@implementation KHNormalCollectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     self.collectionController = [[KHCollectionController alloc] init];
 
     self.collectionController.cellFactory = self.cellFactory;
@@ -43,17 +50,10 @@ KHOrderedDataProtocol
     [self _onRefresh];
 }
 
-- (void)dataProvider:(KHOrderedDataProvider *)dataProvider didLoadDataAtPage:(NSUInteger)page withItems:(NSArray *)items error:(NSError *)error {
-    KHBasicTableViewModel *loadMore = nil;
-    if (!dataProvider.isReachMaxPage) {
-        // create loadmore section
-        loadMore = [[KHBasicTableViewModel alloc] initWithModel:nil];
-        loadMore.sectionModel = [[KHLoadMoreSection alloc] init];
-    }
+- (void)dataProvider:(KHNormalDataProvider *)dataProvider didLoadWithItems:(NSArray *)items error:(NSError *)error {
 
-    // linked with content section
-    KHBasicTableViewModel *content = [[KHBasicTableViewModel alloc] initWithModel:loadMore];
-    content.sectionModel = self.orderedDataProvider;
+    KHBasicTableViewModel *content = [[KHBasicTableViewModel alloc] init];
+    content.sectionModel = self.dataProvider;
 
     // set back to controller model
     self.collectionController.model = content;
@@ -67,7 +67,7 @@ KHOrderedDataProtocol
     return nil;
 }
 
-- (id <KHLoadingOperationProtocol> )loadingOperationForSectionViewModel:(id <KHTableViewSectionModel> )viewModel forPage:(NSUInteger)page {
+- (id <KHLoadingOperationProtocol> )loadingOperationForSectionViewModel:(id<KHTableViewSectionModel>)viewModel {
     return nil;
 }
 
@@ -82,7 +82,7 @@ KHOrderedDataProtocol
 }
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.orderedDataProvider objectAtIndex:indexPath.item];
+    return [self.dataProvider objectAtIndex:indexPath.item];
 }
 
 - (void)enablePullToRefresh {
@@ -106,9 +106,9 @@ KHOrderedDataProtocol
 
     id <KHTableViewSectionModel> loadingContentViewModel = [self getLoadingContentViewModel];
 
-    KHOrderedDataProvider *provider = (KHOrderedDataProvider *)loadingContentViewModel;
+    KHNormalDataProvider *provider = (KHNormalDataProvider *)loadingContentViewModel;
     provider.delegate = self;
-    self.orderedDataProvider = loadingContentViewModel;
+    self.dataProvider = loadingContentViewModel;
 
     self.basicModel = loadingContentSection;
     self.collectionController.model = self.basicModel;

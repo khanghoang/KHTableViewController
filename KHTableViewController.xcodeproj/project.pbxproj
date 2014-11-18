@@ -10,6 +10,7 @@
 		724A47EA55B0BC7D71344F66 /* libPods-KHTableViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB26024678D349BB0C84C24C /* libPods-KHTableViewController.a */; };
 		B4208A3019FBBEA1004D348B /* KHCollectionContentLoadingCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4208A2F19FBBEA1004D348B /* KHCollectionContentLoadingCellFactory.m */; };
 		B42188921A1B3CE3007CDD8D /* KHNormalDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B42188911A1B3CE3007CDD8D /* KHNormalDataProvider.m */; };
+		B42188951A1B3F6E007CDD8D /* KHNormalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42188941A1B3F6E007CDD8D /* KHNormalCollectionViewController.m */; };
 		B42B638F1A09D16D0082D36B /* KHFreshTodayCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42B638E1A09D16D0082D36B /* KHFreshTodayCollectionViewController.xib */; };
 		B43DB75819FC077500AD9BCF /* KHContentLoadingErrorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B43DB75619FC077500AD9BCF /* KHContentLoadingErrorCollectionViewCell.m */; };
 		B43DB75C19FC130800AD9BCF /* KHCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43DB75B19FC130800AD9BCF /* KHCollectionController.m */; };
@@ -81,6 +82,8 @@
 		B4208A2F19FBBEA1004D348B /* KHCollectionContentLoadingCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHCollectionContentLoadingCellFactory.m; sourceTree = "<group>"; };
 		B42188901A1B3CE3007CDD8D /* KHNormalDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHNormalDataProvider.h; sourceTree = "<group>"; };
 		B42188911A1B3CE3007CDD8D /* KHNormalDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHNormalDataProvider.m; sourceTree = "<group>"; };
+		B42188931A1B3F6E007CDD8D /* KHNormalCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHNormalCollectionViewController.h; sourceTree = "<group>"; };
+		B42188941A1B3F6E007CDD8D /* KHNormalCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHNormalCollectionViewController.m; sourceTree = "<group>"; };
 		B42B638E1A09D16D0082D36B /* KHFreshTodayCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHFreshTodayCollectionViewController.xib; sourceTree = "<group>"; };
 		B43DB75519FC077500AD9BCF /* KHContentLoadingErrorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHContentLoadingErrorCollectionViewCell.h; sourceTree = "<group>"; };
 		B43DB75619FC077500AD9BCF /* KHContentLoadingErrorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHContentLoadingErrorCollectionViewCell.m; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 				B445AF3419FE595E00693CD0 /* KHBasicFluentCollectionViewController.m */,
 				B445AF3519FE595E00693CD0 /* KHBasicOrderedCollectionViewController.h */,
 				B445AF3619FE595E00693CD0 /* KHBasicOrderedCollectionViewController.m */,
+				B42188931A1B3F6E007CDD8D /* KHNormalCollectionViewController.h */,
+				B42188941A1B3F6E007CDD8D /* KHNormalCollectionViewController.m */,
 				B445AF2F19FE4EF800693CD0 /* View Models */,
 				B483D1B519FBFA62003EAFE6 /* Cell */,
 				B4208A2D19FBBB17004D348B /* KHCollectionViewCellFactoryProtocol.h */,
@@ -654,6 +659,7 @@
 				B4A95E5419F4BF02001282DF /* KHLoadingFreshTodayOperation.m in Sources */,
 				B4A95D8C19F4BAFB001282DF /* main.m in Sources */,
 				B4A95E4E19F4BE9F001282DF /* KHPopularImagesViewModel.m in Sources */,
+				B42188951A1B3F6E007CDD8D /* KHNormalCollectionViewController.m in Sources */,
 				B4A95E4C19F4BE9F001282DF /* KHLoadingContentErrorViewModel.m in Sources */,
 				B4A95E6019F4C0AC001282DF /* CellFactory1.m in Sources */,
 				B454738D1A00B3290059256C /* KHSuperTableViewCellFactory.m in Sources */,
