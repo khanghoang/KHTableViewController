@@ -115,7 +115,7 @@
 
 - (NSArray *)_reverseArray:(NSArray *)array {
     NSMutableArray *resultArray = [NSMutableArray array];
-    for (int i = array.count - 1; i >= 0; i--) {
+    for (NSInteger i = array.count - 1; i >= 0; i--) {
         [resultArray addObject:array[i]];
     }
     
