@@ -61,6 +61,13 @@
     [self.collectionView reloadData];
 
     [self _setShouldCollectionViewLayout];
+
+    // let subclass handle it
+    [self collectionDidReloadWithItems:items];
+}
+
+- (void)collectionDidReloadWithItems:(NSArray *)items {
+    // let subclass handle it
 }
 
 - (id <KHTableViewSectionModel> )getLoadingContentViewModel {

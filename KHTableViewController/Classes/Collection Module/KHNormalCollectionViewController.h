@@ -17,6 +17,7 @@
 - (id<KHCollectionViewCellFactoryProtocol>)cellFactory;
 - (id<KHTableViewSectionModel>)getLoadingContentViewModel;
 - (id <KHLoadingOperationProtocol> )loadingOperationForSectionViewModel:(id <KHTableViewSectionModel> )viewModel;
+- (void)collectionDidReloadWithItems:(NSArray *)items;
 
 @optional
 - (UICollectionViewLayout *)getCollectionViewLayout;
